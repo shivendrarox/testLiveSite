@@ -1,0 +1,5 @@
+<svg id="filter_alt_black_24dp" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Path_1" data-name="Path 1" d="M0,0H32m0,32H0" fill="none"/>
+  <path id="Path_2" data-name="Path 2" d="M4.356,6.415C7.392,10.3,13,17.5,13,17.5v9A1.506,1.506,0,0,0,14.5,28h3.005a1.506,1.506,0,0,0,1.5-1.5v-9s5.59-7.2,8.626-11.085A1.5,1.5,0,0,0,26.446,4H5.544A1.5,1.5,0,0,0,4.356,6.415Z" transform="translate(0 0)" fill="#a9a9a9"/>
+  <path id="Path_3" data-name="Path 3" d="M0,0H32V32H0Z" fill="none"/>
+</svg>

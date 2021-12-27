@@ -1,0 +1,1151 @@
+// .custom_btn{
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     border:none;
+//     margin-top: 68px;
+//     margin-bottom: 0px;
+
+
+//     background: #20c58b;
+//     border-radius: 8px;
+//     font-size: 16px;
+//     padding: 1.3rem 1.7rem;
+//     color: #ffffff;
+//     font-weight: 800;
+//     line-height: 1.25rem;
+// }
+.ant_custom_message{
+    margin-top: 15vh;
+    }
+    .hero{
+        background: #FFF3EB;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        .hero_label{
+            text-transform: uppercase;
+        }
+        .hero_container{
+            //display: flex;
+            //flex-direction: row;
+        }
+        .hero_container_left{
+            width: 50%;
+        }
+        .hero_container_right{
+            width: 50%;
+            position: relative;
+        }
+        .gradient_img{
+            position: absolute;
+            width: 35rem;
+            right: 20%;
+            top: -80px;
+        }
+    
+        .hero_img{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: fit-content;
+        }
+        .heading{
+            //padding-top:6rem;
+        
+            //width: 60%;
+        
+            position:relative;
+            z-index:5;
+            h1{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 1.24;
+                color: rgba(0, 0, 0, 0.94);            
+                text-align: center;
+            }
+            span{
+                font-size: 40px;
+              }
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 1.72;
+                color: rgba(0, 0, 0, 0.64);
+                //padding-right: 35%;
+            }  
+          }
+    
+      
+         .message{
+             top:130px;
+             position:absolute;
+         }
+        // .bg_img{
+        //     position: absolute;
+        //     top:-120px;
+        //     margin-left:-256px;
+        //     width: 500px;
+        // }
+    
+    
+     
+    
+        .cta_btn{
+            
+            border: 0px solid;
+        padding: 12px 16px;
+        width: 30%;
+        margin-right: 2px;
+        letter-spacing: 0em;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #786AFF;
+        border-radius: 8px;
+        }
+        .cta_input{
+    
+            border: none;
+        width: 70%;
+        padding: 10px;
+        /* max-width: 16rem; */
+        font-weight: normal;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 2.3rem;
+        text-align: left;
+        color: #444444;
+        opacity: 1;
+        background-color: #ffffffcc;
+        /* border-radius: 53px; */
+        margin-left: 0px;
+    
+        }
+        .cta_input:focus-visible {
+            outline-color: #786AFF;
+          }
+        .cta{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+    
+    
+            //background-color: #786AFF;
+            flex-direction: row;
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        width: 70%;
+        box-shadow: 1px 10px 14px 5px #56565612;
+        }
+    
+        .features_container{
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 1.25rem;
+            width: fit-content;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            h2{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            ul{
+                opacity: 1;
+                list-style-type: none;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 38px;
+                letter-spacing: 0em;
+    
+                li{
+    
+                }
+            }
+        }
+        
+    }
+    .Cards{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        .date_container{
+            float: right;
+        }
+        .heading{
+            color: #000000;
+            opacity: 0.94;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: -0.01em;
+            float: left;
+        }
+        .card_item{
+            margin: 0;
+            padding: 0px;
+            margin-bottom: 6rem;
+            width: 100%;
+            display: block;
+            cursor: pointer;
+    
+            transition: all .18s ease-in-out;
+            &:hover{
+                transform: scale(1.04);
+                .card_matter{
+                    opacity: 0.94;
+                }
+            }
+    
+            .card_img{
+                width: 100%;
+                img{
+                    min-width: 15rem;
+                    max-height: 30rem;
+                }
+            }
+            .card_matter{
+                width: 100%;
+                opacity: 0.74;
+                .card_tag{
+                    padding-top: 1rem;
+                    color: #808080;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    text-transform: capitalize;
+                }
+                .card_title{
+                    padding-top: 1rem;
+                    color: #000000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 21px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+    
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    // .brands{
+    //     // padding-top: 44px;
+    //     // padding-bottom: 44px;
+    //     padding-top: 6rem;
+    //     padding-bottom: 6rem;
+    //     .brands_heading{
+    //         margin-top: 2rem;
+    //         margin-bottom: 2rem;
+    
+    //         font-family: Inter;
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         // font-size: 18px;
+    //         // line-height: 25px;
+    //         font-size: 1.5rem;
+    //         line-height: 2.5rem;
+    //         text-align: center;
+    //         color: #18191F;
+    //         opacity: 0.74;
+    //     }
+    
+    //     .image{
+    //         opacity: 0.8;
+    
+    //     }
+    //     .img_row{
+    //         justify-content: center;
+    //     }
+    // }
+    
+    .features{
+        // padding-top:82px;
+        // padding-bottom: 82px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        // padding-top: 6rem;
+        // padding-bottom: 6rem;
+        .heading{
+            margin: auto;
+            width: 35%;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 3.7rem;
+            text-align: center;
+            letter-spacing: -0.03em;
+            font-feature-settings: 'liga' off;
+            color: #18191F;
+        }
+        .desc{
+            margin: auto;
+            width: 700px;
+    
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            font-feature-settings: 'liga' off;
+            color: #18191F;
+        }
+    
+        .card_img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card_h2{
+            font-size: 20px;
+    
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            text-align: center;
+            font-feature-settings: 'liga' off;
+            color: rgba(0, 0, 0, 0.84);
+        }
+        .card_p{
+            margin: auto;
+            text-align: center;
+            width: 80%;
+    
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 400;
+            // font-size: 16px;
+            // line-height: 26px;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-feature-settings: 'liga' off;
+            color: rgba(0, 0, 0, 0.64);
+        }
+    }
+    
+    .section{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        // padding-top: 6rem;
+        // padding-bottom: 6rem;
+        .heading{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            // font-size: 45px;
+            // line-height: 45px;
+            font-size: 3rem;
+            line-height: 3.7rem;
+            text-align: center;
+            color: #18191F;
+            // padding-bottom: 3rem;
+        }
+        // .title{
+        //     font-family: Poppins;
+        //     font-style: normal;
+        //     font-weight: bold;
+        //     // font-size: 22px;
+        //     // line-height: 21px;
+        //     font-size: 1.8rem;
+        //     line-height: 2.8rem;
+        //     font-feature-settings: 'liga' off;
+        //     color: #18191F;
+        //     opacity: 0.84;
+        // }
+        .desc_title{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            // font-size: 20px;
+            // line-height: 24px;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            display: flex;
+            align-items: center;
+            font-feature-settings: 'liga' off;
+            
+            /* Text / Gray 900 */
+            
+            color: #18191F;
+            
+            opacity: 0.84;
+        }
+        .desc{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            // font-size: 18px;
+            // line-height: 28px;
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: #000000;
+            opacity: 0.74;
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+            li{
+                padding-bottom: 4rem;
+                list-style-type: none;
+    
+            }
+            .custom_li{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                .marker_img{
+                    width: 2rem;
+                    margin-right: 1ch;
+                    //margin-top: 0.7rem;
+                }
+            }
+            li:last-of-type{
+                padding-bottom: 0;
+            }
+        }
+        .image{
+            width: 100%;
+        }
+    }
+    
+    // .carousel_block{
+      
+    //    // padding-top:6rem;
+    //     padding-bottom: 6rem;
+    
+    //     .cont{
+    
+    //         display: flex;
+    //         flex-direction: row;
+    //         flex-wrap: wrap;
+        
+    //         //max-width: 1300px;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //     }
+    
+    //     .right_box{
+    
+    //     }
+    
+    //     .mobile_remove{
+    //         min-height:30rem;
+    //         position: relative;
+    //     }
+      
+    //     .heading{
+    //         font-family: Poppins;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         // font-size: 45px;
+    //         // line-height: 45px;
+    //         font-size: 3.5rem;
+    //         line-height: 4.5rem;
+    //         /* identical to box height */
+    
+    //         text-align: left;
+    //         margin-top: 4rem;
+    //         margin-left: 15%;
+    //        width: 65%;
+    
+    //        color: #FFFFFF;    }
+    //     .desc{
+    //         font-family: Inter;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         // font-size: 20px;
+    //         // line-height: 20px;
+    //         font-size: 1.5rem;
+    //         line-height: 2.5rem;
+    //         text-align: left;
+    //         color: #FFFFFF;        opacity: 0.6;
+    
+    //         text-align: left;
+    //         padding-top: 5rem;
+    //         margin-left: 15%;
+    //        width: 65%;
+    //     }
+    
+    //     .my_carousel_container{
+    
+    //         //border: 1px solid red;
+    //         //border-radius: 24px;
+    
+    //          //background-color: #3395ff;
+    //         // background-image: url("../../static/images/type1/white circle.svg");
+    //         background-blend-mode: lighten;
+    //         background-repeat: no-repeat;
+    //         // background-position: 110% 130%;
+    
+    //     }
+    //     .carousel_indicators{
+    // justify-content: left;
+    // margin-left: 3rem !important;
+    
+    //         li{
+    
+    //         box-sizing: content-box;
+    //         flex: 0 1 auto;
+    //         width: 0px;
+    //         height: 0px;
+    //                 border-radius: 12px;
+    //         margin-right: 6px;
+    //         margin-left: 6px;
+    //         margin-bottom: 16px ;
+    //         text-indent: -999px;
+    //         cursor: pointer;
+    //         color: #FFFFFF;
+    //         background: #FFFFFF;
+    //         background-clip: padding-box;
+    //         border: 5px solid #FFFFFF;
+    
+    //         opacity: 0.5;
+    //         transition: opacity 0.6s ease;
+    //             &.active{
+    //                 //border: 5px solid grey;
+    //                 background:transparent;
+    
+    //             }
+    //         }
+    //     }
+        
+    //     .caro_item{
+    //        background-blend-mode: lighten;
+    //        background-repeat: no-repeat;
+    
+    //        padding-left: 3rem;
+    //        min-height: 30rem;
+    //     }
+    //     .caro_img{
+    //         padding-top: 3rem;
+    //         width: 12rem;
+    //     }
+    //     .img_circle{
+    //         width: 13rem;
+    //         position: absolute;
+    //          bottom: 0px;
+    //         // right: 0px;
+    //     }
+    //     .caro_desc{
+    //         font-family: Inter;
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         // font-size: 20px;
+    //         // line-height: 35px;
+    //         font-size: 1.5rem;
+    //         line-height: 2.5rem;
+    //         font-feature-settings: 'liga' off;
+    //         color: rgba(255, 255, 255, 0.84);
+    
+    //         width: 75%;
+    //         padding-top: 3rem;
+    //     }
+    //     .caro_link{
+    //         //padding-top: 3rem;
+    //         //padding-bottom: 4rem;
+    //         position: absolute;
+    //   bottom: 50px;
+    //         a{
+    //             font-family: Manrope;
+    //             font-style: normal;
+    //             font-weight: bold;
+    //             // font-size: 16px;
+    //             // line-height: 30px;
+    //             font-size: 1.3rem;
+    //             line-height: 2.2rem;
+    //             font-feature-settings: 'liga' off;
+    //             color: #FFFFFF;
+    //         }
+    //     }
+    // }
+    
+    // .TabBlock{
+    //     padding-top:6rem;
+    //     padding-bottom: 6rem;
+    
+    //     .video{
+    //         height: 35rem;
+    //         //border: 1px solid red;
+    //     }
+    //     .mobile_heading {
+    //         display: none;
+    //       }
+    //       .active{
+    //         background: rgba(117, 103, 246, 0.24) !important;
+    //         color: #5858E0 !important;
+    //         font-weight: bold !important;
+    //         border-right: 3px solid #7567F6;
+    //     }
+    //     .marketing_tile {
+    //         background: transparent;
+    //         padding: 1rem;
+    //         display: flex;
+    //         align-items: center;
+    //         padding: 1.4rem 2.25rem 1.4rem 2rem;
+    //         margin-bottom: 1rem;
+    //         cursor: pointer;
+    
+    //         color: rgba(255, 255, 255, 0.74);
+    //         font-family: Inter;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         font-size: 1.2rem;
+    //         line-height: 2.2rem;
+    //         font-feature-settings: 'liga' off;
+            
+    //         width: 65%;
+     
+    
+    //       }
+    //       .text_email_marketing {
+    //         //position: absolute;
+    //         width: 100%;
+    //         padding: 1.5rem;
+    //         background: #1F1B24;
+    //               //bottom: -1rem;
+    
+    //         font-size: 1.125rem;
+    //         line-height: 150%;
+    //         text-align: center;
+    //         color: rgba(255, 255, 255, 0.74);
+    //           }
+    //     // .tab_heading{
+    //     //     text-align: center;
+    //     // }
+    //     // .tab_video{
+    //     //     display: block;
+    //     //     margin-left: auto;
+    //     //     margin-right: auto;
+    //     //     width:560px;
+    //     //     height:315px;
+    //     // }
+    //     // .tab_btn{
+    //     //     display: block;
+    //     //     margin-left: auto;
+    //     //     margin-right: auto;
+    //     //     border:none;
+    //     //     margin-top: 4.23rem;
+    //     //     margin-bottom: 5.23rem;
+    
+    
+    //     //     background: #20c58b;
+    //     //     border-radius: 8px;
+    //     //     font-size: 16px;
+    //     //     padding: 1.4rem 1.8rem;
+    //     //     color: #ffffff;
+    //     //     font-weight: 800;
+    //     //     line-height: 1.25rem;
+    //     // }
+    //     .heading{
+    //         font-family: Poppins;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         font-size: 3.5rem;
+    //         line-height: 4.5rem;
+    //         text-align: center;
+    //         color: #FFFFFF;
+    
+    //         width: 80%;
+    //         display: block;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //     }
+    //     // .navlink_overide{
+    //     //     border: none;
+    //     //     padding-bottom: 20px;
+    
+    //     //     font-family: Inter;
+    //     //     font-style: normal;
+    //     //     font-weight: normal;
+    //     //     font-size: 14px;
+    //     //     line-height: 19px;
+    //     //     font-feature-settings: 'liga' off;
+    
+    //     //     color: rgba(0, 0, 0, 0.64);
+    //     // }
+    
+    //     // .active_overide{
+    //     //     border-bottom: 4px solid #5858E0;
+    
+    //     //     font-family: Inter;
+    //     //     font-style: normal;
+    //     //     font-weight: bold;
+    //     //     font-size: 16px;
+    //     //     line-height: 19px;
+    //     //     font-feature-settings: 'liga' off;
+    
+    //     //     color: #5858E0;
+    //     // }
+    //     // .active_overide:hover{
+    //     //     border-bottom: 4px solid #5858E0;
+    //     // }
+    //     // .tabs_override{
+    //     //     //background-color: green;
+    //     //     justify-content: center;
+    //     //     margin-left: 30px;
+    //     //     margin-right: 30px;
+    //     //     li{
+    //     //         width: 20%;
+    //     //         text-align: center;
+    //     //     }
+    //     // }
+    //     // .tab_desc{
+    //     //     width: 60%;
+    //     //     margin: auto;
+    //     //     text-align: center;
+    
+    //     //     font-family: Inter;
+    //     //     font-style: normal;
+    //     //     font-weight: normal;
+    //     //     font-size: 16px;
+    //     //     line-height: 32px;
+    //     //     text-align: center;
+    //     //     font-feature-settings: 'liga' off;
+    //     //     color: rgba(0, 0, 0, 0.64);
+    //     // }
+    //     // .tab_iframe{
+    //     //     border:none;
+    //     //     margin: auto;
+    //     // }
+    // }
+    
+    // .Testimonial{
+    //     // padding-top: 44px;
+    //     // padding-bottom: 44px;
+    //     padding-top:6rem;
+    //     padding-bottom: 6rem;
+    //     .heading{
+    //         font-family: Poppins;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         // font-size: 45px;
+    //         // line-height: 45px;
+    //         font-size: 3.5rem;
+    //         line-height: 4.5rem;
+    //         text-align: center;
+    //         color: #171A22;
+    //     }
+    //     .desc{
+    //         font-family: Inter;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         // font-size: 18px;
+    //         // line-height: 32px;
+    //         font-size: 1.5rem;
+    //         line-height: 2.5rem;
+    //         text-align: center;
+    //     }
+    //     .card_container{
+    //         padding-top: 4rem;
+    //     }
+    //     .card{
+    //         background: #ffffff;
+    //         border-radius: 10px;
+    //         box-shadow: 0px 0px 15px #C4C4C4;
+    //         height: 250px;
+    
+    //         .heading{
+    //             font-family: Manrope;
+    //             font-style: normal;
+    //             font-weight: 600;
+    //             font-size: 24px;
+    //             line-height: 32px;
+    //             text-align: center;
+    //             font-feature-settings: 'liga' off;
+    //             color: #18191F;
+    //         }
+    //         .desc{
+    //             width: 98%;
+    //             margin: auto;
+    //             font-family: Manrope;
+    //             font-style: normal;
+    //             font-weight: normal;
+    //             font-size: 14px;
+    //             line-height: 24px;
+    //             text-align: center;
+    //             font-feature-settings: 'liga' off;
+    //             color: #18191F;
+    //         }
+    //     }
+    //     .round_img{
+    //         display: block;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //     }
+    //     .img_name{
+    //         display: block;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    
+    //         font-family: Manrope;
+    //         font-style: normal;
+    //         font-weight: bold;
+    //         font-size: 18px;
+    //         line-height: 28px;
+    //         text-align: center;
+    //         font-feature-settings: 'liga' off;
+    //         color: #18191F;
+    //     }
+    //     .img_desc{
+    //         display: block;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    
+    //         font-family: Manrope;
+    //         font-style: normal;
+    //         font-weight: normal;
+    //         font-size: 14px;
+    //         line-height: 24px;
+    //         text-align: center;
+    //         font-feature-settings: 'liga' off;
+    //         color: #474A57;
+    //     }
+    // }
+    
+    .Faq{
+        // padding-top:6rem;
+        // padding-bottom: 6rem;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        .heading{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+            text-align: center;
+            color: #171A22;
+        }
+        .desc{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 18px;
+            // line-height: 32px;
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            text-align: center;
+            font-feature-settings: 'liga' off;
+            color: rgba(0, 0, 0, 0.64);
+        }
+        .accord_btn{
+            padding: 12px;
+            border-radius: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            background: #FAFAFA;
+            width: 100%;
+            box-shadow: none;
+            text-align: justify;
+    
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 14px;
+            // line-height: 22px;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: rgba(0, 0, 0, 0.85);
+            ul{
+                padding-left: 10px;
+                li{
+                    list-style-image: url(/static/images/type1/left.svg);
+                    /* OR */
+                    //list-style-type: '👉';
+                    //padding-inline-start: 1ch;
+                }
+            }
+        }
+        .accord_btn:focus{
+            text-decoration: none;
+        }
+        .accord_btn:hover{
+            text-decoration: none;
+        }
+        .accord_card{
+            border-radius: 0px;
+            // font-size: 14px;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: rgba(0, 0, 0, 0.64);
+            p{
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+    
+    .EndBlock{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        // padding-top: 6rem;
+        // padding-bottom: 6rem;
+        .cta{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .cta_btn{
+            border: none;
+            padding: 12px 28px;
+            width: 100%;
+            max-width: 25rem;
+    
+            font-family: Inter;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+            text-align: center;
+            color: #FFFFFF;
+            background: #786AFF;
+            border-radius: 8px;
+        }
+        .cta_input{
+            border-radius: 8px;
+            border: 2px solid rgba(197, 196, 200, 1);
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            max-width: 25rem;
+    
+            font-family: Inter;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+            text-align: center;
+            color: #18191F;
+            opacity: 0.74;
+        }
+        .heading{
+            text-align: center;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 3.7rem;
+            text-align: center;
+            color: #18191F;
+    
+        }
+        .cta{
+            text-align: center;
+        }
+    
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .hero{
+            .hero_label{
+                text-align: center;
+            }
+            .hero_container{
+                flex-direction: column;
+                .hero_container_left{
+                    width: 100%;
+                }
+                .hero_container_right{
+                    width: 100%;
+                }
+            }
+            .cta{
+                width: 100%;
+                flex-direction: column;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                .cta_btn{
+                    width: 100%;
+                }
+                .cta_input{
+                    text-align: center;
+                    width: 100%;
+                    max-width: 100%;
+                    margin-left: 0px;
+                }
+            }
+            .heading{
+                h1{
+                    text-align: center;
+                }
+                p{
+                    padding-right: 0%;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .gradient_img{
+                display: none;
+            }
+            .features_container{
+                margin-top: 54px;
+            }
+        }
+        .section{
+            .heading{
+                margin: 0;
+                font-size: 3.2rem;
+                line-height: 4.2rem;
+                text-align: center;
+            }
+            .desc{
+                width: 100%;
+                li{
+                    //margin-left: 1.5rem;
+                }
+            }
+        }
+        .Cards{
+            .date_container{
+                float: left;
+                padding-top: 34px;
+            }
+        }
+        // .brands{
+        //     padding-top: 4rem;
+        //     padding-bottom: 4rem;
+        //     .brands_heading{
+        //         margin-top: 2rem;
+        //     }
+        //     .image{
+        //         padding-top: 5rem;
+        //     }
+        //     .img_row{
+        //         text-align: center;
+        //         img{
+        //             width: 35%;
+        //         }
+        //     }
+        // }
+    
+        .features{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            .heading{
+                width: 100%;
+                font-size: 3.2rem;
+                line-height: 4.2rem;
+                text-align: center;
+                margin: 0;
+            }
+            .desc{
+                width: 100%;
+            }
+            .card_h2{
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            .card_p{
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+            }
+        }
+    
+        // .carousel_block{
+        //     .mobile_remove{
+        //         display: none;
+        //     }
+        // }
+      
+        // .Testimonial{
+        //     padding-top: 4rem;
+        //     padding-bottom: 4rem;
+        //     .card_container{
+        //         margin-top: 2rem;
+        //         margin-bottom: 2rem;
+        //     }
+        // }
+    
+        // .TabBlock{
+        //     .video{
+        //         height: 15rem;
+        //         //border: 1px solid red;
+        //     }
+        //     .mobile_heading{
+        //         font-weight: bold;
+        //         font-size: 1.75rem;
+        //         line-height: 150%;
+        //         text-align: center;
+        //         margin-top: 1.5rem;
+        //         display: block !important;
+        //         color: #ffffff !important;
+        //     }
+        //     .tabs_override{
+        //         margin: 0px;
+        //         justify-content: space-between;
+        //     }
+        //     .tab_desc{
+        //         width: 100%;
+        //         text-align: center;
+        //     }
+        //     .tab_video{
+        //         width: 100%;
+        //     }
+        //     .tab_iframe{
+        //          width: 99%;
+        //     }
+        // }
+        
+        .Faq{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+    
+        .EndBlock{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            .heading{
+                text-align: center;
+            }
+            .cta{
+                padding-top:16px;
+                text-align: center;
+                margin: 0;
+                padding-left:5%;
+            }
+            .cta_btn{
+                width: 80%;
+            }
+            .cta_input{
+                width: 80%;
+                margin-bottom: 1rem;
+                margin-right: 0px;
+            }
+            .heading{
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .button{
+                font-size: 1rem;
+                display: block;
+                margin-left: auto;
+                margin-right:auto;
+            }
+        }
+    
+      }

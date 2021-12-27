@@ -1,0 +1,346 @@
+.menu_bar{
+    background: #FFFFFF;
+    padding-bottom: 20px;
+    .menu_container{
+        display: flex;
+    }
+    .menu_heading{
+        flex-basis:50%;
+        padding-left: 2em;
+        padding-right: 2em;
+        align-self: center;
+        ul{
+            list-style-type:none;
+            list-style-position: inside;
+            li{
+                display:inline;
+                padding-right:1em;
+                opacity: 0.7;
+                align-self: center;
+                cursor: pointer;
+                &:last-of-type{
+                    padding-right: 0;
+                }
+                &:first-of-type{
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    cursor: default;
+                }
+                img{
+                    max-width: 20px;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            opacity: 0.64;
+        }
+        .menu_heading_caption{
+            margin-bottom: 4px;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+    .menu_image{
+        // flex-basis:10%;
+        img{
+            height: 156px;
+            width: 156px;
+            border-radius:12px;
+            box-shadow: 1px 10px 38px 6px #ececec;
+
+        }
+    }
+    .menu_buttons{
+        flex-basis:40%;
+        padding: 1em;
+        background-color: transparent;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+.mail_content{
+    background-color: #FFF3EB;
+    padding: 2.5em 4em;
+    .podcast_listen_container{
+        flex-basis:50%;
+        padding-right: 2em;
+        align-self: center;
+        ul{
+            list-style-type:none;
+            list-style-position: inside;
+            margin-bottom: 0;
+            li{
+                display:inline;
+                padding-right:1em;
+                align-self: center;
+                cursor: pointer;
+                &:last-of-type{
+                    padding-right: 0;
+                }
+                &:first-of-type{
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    cursor: default;
+                    opacity: 0.7;
+                }
+                img{
+                    max-width: 20px;
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            opacity: 0.64;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+    .button_container{
+        flex-basis: 10%;
+        align-self: center;
+        cursor: pointer;
+    }
+    .iframe_container{
+        flex-basis: 80%;
+        P{
+            padding-top: 1.125em;
+            text-align: center;
+        }
+        iframe{
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+    }
+    .center_flex_container{
+        display: flex;
+        width: 100%;
+    }
+}
+.recent_newsletters{
+background-color: #ffff;
+    h2{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .card_container{
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card_item{
+        padding: 1em;
+        border:0px solid red;
+        width:49%;
+        display: flex;
+        cursor: pointer;
+        .img_left{
+            width: 30%;
+        }
+        .text_right{
+            width: 70%;
+            padding-right: 1rem;
+        }
+        .card_img{
+            width: 100%;
+            height: auto;
+        }
+        .card_title{
+            padding-left: 1rem;
+            padding-top: 1rem;
+            text-align: left;
+            line-height: 2.2rem;
+            letter-spacing: 0.24px;
+            color: #000000;
+            opacity: 0.94;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+        .card_tag{
+            padding-left: 1rem;
+            text-align: left;
+            font-size: 1rem;
+            letter-spacing: 1.6px;
+            color: #808080;
+            opacity: 1;
+
+            text-transform: capitalize; 
+        }
+    }
+}
+.newsletter_footer{
+    background: #786AFF;
+    .cta_container{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .cta_btn{
+        border: 0px solid;
+        padding: 12px 28px;
+        width: 25%;
+        //max-width: 25rem;
+        letter-spacing: 0em;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #000000;
+        border-radius: 0px 5px 5px 0px;
+    }
+    .cta_input{
+        border:none;
+        width: 60%;
+        //padding: 10px;
+        max-width: 25rem;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 2.3rem;
+        text-align: center;
+        color: #18191F;
+        opacity: 1;
+        background-color: #FFFFFF;
+        border-radius: 5px 0px 0px 5px;
+        margin-left: 2px;
+    }
+    .cta_input:focus-visible {
+        outline-color: #786AFF;
+      }
+    .cta{
+        justify-content: center;
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #786AFF;
+        border-radius: 5px;
+        width: 50%;
+
+        background: #786AFF;
+
+        //background-color: #786AFF;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .cta_btn{
+        width: 40% !important;
+    }
+    .webinar_video{
+        height: 260px !important;
+    }
+.menu_bar{
+    .menu_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .menu_buttons{
+            display: none;
+            flex-basis: 100%;
+            padding: 0rem;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+        .menu_heading{
+            flex-basis: 70%;
+            padding-right: 0;
+            padding-left: 1em;
+            p{
+                display: none;
+            }
+            ul{
+                display: none;
+            }
+            .menu_heading_caption{
+                display: block;
+            }
+        }
+        .menu_image{
+            img{
+                height: 80px;
+                width: 80px;
+                border-radius:12px;
+            }
+        }
+    }
+}
+.mail_content{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+        .center_flex_container{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .iframe_container{
+            flex-basis: 100%;
+            order: 1;
+        }
+        .button_container{
+            order:2;
+
+        }
+    }
+
+    .recent_newsletters{
+        .card_item{
+            width: 100%;
+        }
+    }    
+    .newsletter_footer{
+        h2{
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .cta{
+            width: 98%;
+        }
+    }
+}

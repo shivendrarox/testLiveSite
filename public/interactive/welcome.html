@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html amp4email="true">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      async
+      custom-template="amp-mustache"
+      src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-form"
+      src="https://cdn.ampproject.org/v0/amp-form-0.1.js"
+    ></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp4email-boilerplate>
+      body {
+        visibility: hidden;
+      }
+    </style>
+    <style amp-custom>
+      .generated_1601738938655sz28b .rating-wrapper {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .generated_1601738938655sz28b .rating-wrapper label {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        margin-right: 10px;
+        letter-spacing: 0px;
+      }
+
+      .generated_1601738938655sz28b .rating-wrapper label input {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        margin: 0;
+      }
+
+      .generated_1601738938655sz28b .rating-wrapper label div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .generated_1601738938655sz28b .rating-wrapper label input:checked ~ div {
+        background-color: #ed5a6c;
+      }
+
+      .generated_1601738938655sz28b .rating-wrapper label input:checked ~ span {
+        color: #fff;
+      }
+
+      .generated_1601738938655sz28b .rating-wrapper label span {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 300;
+      }
+
+      .generated_1601738938655sz28b .data .screen .button_store {
+        text-align: center;
+      }
+
+      .generated_1601738938655sz28b .validatorButton {
+        background: #ed5a6c;
+        border-radius: 2px;
+        border: none;
+        margin: auto;
+        text-align: center;
+        margin-top: 1rem;
+        width: 157px;
+        height: 47px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: inherit;
+        color: #ffffff;
+        font-family: Arial;
+        display: inline-block;
+        padding: 0.5rem 2rem;
+        margin-left: 0px;
+        margin-bottom: 20px;
+      }
+
+      .generated_1601738938655sz28b .validatorImage {
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .generated_1601738938655sz28b .validatorText {
+        font-weight: 500;
+        font-family: Arial;
+        font-style: normal;
+        color: #000000;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .generated_1601738938655sz28b .option {
+        display: inline-block;
+      }
+
+      .generated_1601738938655sz28b .hz {
+        display: inline-block;
+        background: white;
+      }
+
+      .generated_1601738938655sz28b .multiselect-wrapper label {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1;
+      }
+
+      .generated_1601738938655sz28b .multiselect-wrapper label input {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+      }
+
+      .generated_1601738938655sz28b .multiselect-wrapper label div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .generated_1601738938655sz28b
+        .multiselect-wrapper
+        label
+        input:checked
+        ~ span {
+        background-color: #ed5a6c;
+        color: #fff;
+      }
+
+      .generated_1601738938655sz28b .multiselect-wrapper label span {
+        padding: 0px 15px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+      }
+
+      .generated_1601738938655sz28b button {
+        display: inline-block;
+      }
+
+      .generated_1601738938655sz28b input {
+        outline: none;
+      }
+
+      .template_blocks .generated_1601738938655sz28b {
+        max-width: 600px;
+      }
+
+      .generated_1601738938655sz28b * {
+        box-sizing: border-box;
+      }
+
+      .generated_1601738938655sz28b .td {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: inherit;
+        color: #000;
+      }
+
+      .generated_1601738938655sz28b #dt {
+        display: inline-block;
+      }
+
+      .generated_1601738938655sz28b #date-time > *:first-child {
+        grid-column: 1 / span 2;
+      }
+
+      .generated_1601738938655sz28b #date-time > *:nth-child(2) {
+        grid-column: 3 / span 2;
+      }
+
+      .generated_1601738938655sz28b #date-time label input,
+      .generated_1601738938655sz28b .dropdown,
+      .generated_1601738938655sz28b #date-time button {
+        display: block;
+        font: inherit;
+      }
+
+      .generated_1601738938655sz28b button {
+        cursor: pointer;
+      }
+
+      .generated_1601738938655sz28b button:focus {
+        color: #fff;
+        background-color: #141414;
+      }
+
+      .generated_1601738938655sz28b label {
+        letter-spacing: inherit;
+      }
+
+      .generated_1601738938655sz28b .input {
+        display: block;
+        left: 612px;
+        top: 202px;
+        box-sizing: border-box;
+        border-radius: 2px;
+      }
+
+      .generated_1601738938655sz28b .button {
+        border: none;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: inherit;
+      }
+
+      @media screen and (max-width: 600px) {
+        .generated_1601738938655sz28b #date-time {
+          display: block;
+        }
+
+        .generated_1601738938655sz28b #date-time label:first-child {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .template_blocks .generated_1601738938655sz28b .button {
+        background-color: #20c58b;
+        width: 120px;
+        height: 48px;
+        color: #ffffff;
+        border: 0px solid #fafa;
+        border-radius: 12px;
+        font-size: inherit;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: none;
+        text-decoration: none;
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data .button_store {
+        text-align: center;
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data .optionColor {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        height: 30px;
+        width: auto;
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .optionColor
+        input
+        ~ ._checkmark {
+        background-color: #ffffff;
+        color: #000000;
+        border: 0px solid transparent;
+        border-radius: 25px;
+        transform: scale(1.2);
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .optionColor
+        input:checked
+        ~ ._checkmark {
+        background-color: #59c68c;
+        color: #ffffff;
+        border: 0px solid transparent;
+      }
+
+      @media screen and (max-width: 600px) {
+        .template_blocks .generated_1601738938655sz28b .data .optionCollection {
+          text-align: center;
+        }
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data .input {
+        width: 100%;
+        border: 1px solid #c2cfe0;
+        border-radius: 12px;
+        font-size: inherit;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 35px;
+        padding-left: 10px;
+        padding-bottom: 0px;
+        padding-top: 4px;
+        padding-right: 0px;
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data textarea.input {
+        height: 105px;
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data .question {
+        font-size: inherit;
+        line-height: 1.5;
+        color: #fafafa;
+        text-decoration: none;
+        font-weight: 600;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-style: normal;
+      }
+
+      ::placeholder {
+        color: #cfcdcd;
+        padding: 0px;
+      }
+
+      #generated_1601738938655 {
+        background-color: #ffffff;
+      }
+
+      .template_blocks .generated_1601738938655sz28b {
+        background-color: #5a38fd;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 0px solid transparent;
+        border-radius: 12px;
+        font-family: Arial;
+        box-shadow: 0 2px 16px #b7b7b7;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0px;
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data .dropdown {
+        width: 100%;
+        font-size: inherit;
+        color: #000000;
+        background-color: #ffffff;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        height: 35px;
+        border: 1px solid #c2cfe0;
+        border-radius: 16px;
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .rating-wrapper
+        label {
+        border: 0px solid lightgray;
+        color: #000000;
+        background-color: #ffffff;
+        margin-right: auto;
+        width: 35px;
+        height: 35px;
+        border-radius: 24px;
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .rating-wrapper
+        label
+        input:checked
+        ~ div {
+        background-color: #20c58b;
+        border-radius: 24px;
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .rating-wrapper
+        label
+        input:checked
+        ~ .font {
+        color: #fff;
+        font-size: 35px;
+        background-color: transparent;
+      }
+
+      .template_blocks .generated_1601738938655sz28b .data .rating-wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        justify-content: flex-start;
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .rating-wrapper
+        label
+        span {
+        font-size: 20px;
+      }
+
+      .template_blocks
+        .generated_1601738938655sz28b
+        .data
+        .rating-wrapper
+        label
+        .smFont {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .template_blocks
+          .generated_1601738938655sz28b
+          .data
+          .rating-wrapper
+          label {
+          width: 25px;
+          height: 25px;
+          margin-right: auto;
+        }
+
+        .template_blocks
+          .generated_1601738938655sz28b
+          .data
+          .rating-wrapper
+          label
+          .responsive {
+          font-size: 14px;
+        }
+
+        .template_blocks
+          .generated_1601738938655sz28b
+          .data
+          .rating-wrapper
+          label
+          .smFont {
+          font-size: 12px;
+        }
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper label {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        margin-right: 10px;
+        letter-spacing: 0px;
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper label input {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        margin: 0;
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper label div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper label input:checked ~ div {
+        background-color: #ed5a6c;
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper label input:checked ~ span {
+        color: #fff;
+      }
+
+      .generated_1601809043499sz28b .rating-wrapper label span {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 300;
+      }
+
+      .generated_1601809043499sz28b .data .screen .button_store {
+        text-align: center;
+      }
+
+      .generated_1601809043499sz28b .validatorButton {
+        background: #ed5a6c;
+        border-radius: 2px;
+        border: none;
+        margin: auto;
+        text-align: center;
+        margin-top: 1rem;
+        width: 157px;
+        height: 47px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: inherit;
+        color: #ffffff;
+        font-family: Arial;
+        display: inline-block;
+        padding: 0.5rem 2rem;
+        margin-left: 0px;
+        margin-bottom: 20px;
+      }
+
+      .generated_1601809043499sz28b .validatorImage {
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .generated_1601809043499sz28b .validatorText {
+        font-weight: 500;
+        font-family: Arial;
+        font-style: normal;
+        color: #000000;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .generated_1601809043499sz28b .option {
+        display: inline-block;
+      }
+
+      .generated_1601809043499sz28b .hz {
+        display: inline-block;
+        background: white;
+      }
+
+      .generated_1601809043499sz28b .multiselect-wrapper label {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1;
+      }
+
+      .generated_1601809043499sz28b .multiselect-wrapper label input {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+      }
+
+      .generated_1601809043499sz28b .multiselect-wrapper label div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .generated_1601809043499sz28b
+        .multiselect-wrapper
+        label
+        input:checked
+        ~ span {
+        background-color: #ed5a6c;
+        color: #fff;
+      }
+
+      .generated_1601809043499sz28b .multiselect-wrapper label span {
+        padding: 0px 15px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+      }
+
+      .generated_1601809043499sz28b button {
+        display: inline-block;
+      }
+
+      .generated_1601809043499sz28b input {
+        outline: none;
+      }
+
+      .template_blocks .generated_1601809043499sz28b {
+        max-width: 600px;
+      }
+
+      .generated_1601809043499sz28b * {
+        box-sizing: border-box;
+      }
+
+      .generated_1601809043499sz28b .td {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: inherit;
+        color: #000;
+      }
+
+      .generated_1601809043499sz28b #dt {
+        display: inline-block;
+      }
+
+      .generated_1601809043499sz28b #date-time > *:first-child {
+        grid-column: 1 / span 2;
+      }
+
+      .generated_1601809043499sz28b #date-time > *:nth-child(2) {
+        grid-column: 3 / span 2;
+      }
+
+      .generated_1601809043499sz28b #date-time label input,
+      .generated_1601809043499sz28b .dropdown,
+      .generated_1601809043499sz28b #date-time button {
+        display: block;
+        font: inherit;
+      }
+
+      .generated_1601809043499sz28b button {
+        cursor: pointer;
+      }
+
+      .generated_1601809043499sz28b button:focus {
+        color: #fff;
+        background-color: #141414;
+      }
+
+      .generated_1601809043499sz28b label {
+        letter-spacing: inherit;
+      }
+
+      .generated_1601809043499sz28b .input {
+        display: block;
+        left: 612px;
+        top: 202px;
+        box-sizing: border-box;
+        border-radius: 2px;
+      }
+
+      .generated_1601809043499sz28b .button {
+        border: none;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: inherit;
+      }
+
+      @media screen and (max-width: 600px) {
+        .generated_1601809043499sz28b #date-time {
+          display: block;
+        }
+
+        .generated_1601809043499sz28b #date-time label:first-child {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .template_blocks .generated_1601809043499sz28b .button {
+        background-color: #20c58b;
+        width: 120px;
+        height: 47px;
+        color: #ffffff;
+        border: 0px solid transparent;
+        border-radius: 5px;
+        font-size: inherit;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: none;
+        text-decoration: none;
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data .button_store {
+        text-align: center;
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data .optionColor {
+        font-size: inherit;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        height: 30px;
+        width: auto;
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .optionColor
+        input
+        ~ ._checkmark {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #c2cfe0;
+        border-radius: 50px;
+        transform: scale(1);
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .optionColor
+        input:checked
+        ~ ._checkmark {
+        background-color: #ed5a6c;
+        color: #ffffff;
+        border: 0px solid transparent;
+      }
+
+      @media screen and (max-width: 600px) {
+        .template_blocks .generated_1601809043499sz28b .data .optionCollection {
+          text-align: left;
+        }
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data .input {
+        width: 100%;
+        border: 1px solid #c2cfe0;
+        border-radius: 0px;
+        font-size: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        height: 35px;
+        padding-left: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data textarea.input {
+        height: 105px;
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data .question {
+        font-size: inherit;
+        line-height: 1.5;
+        color: #4e4e4e;
+        text-decoration: none;
+        font-weight: 600;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        font-style: normal;
+      }
+
+      ::placeholder {
+        color: #cfcdcd;
+        padding: 0px;
+      }
+
+      #generated_1601809043499 {
+        background-color: #ffffff;
+      }
+
+      .template_blocks .generated_1601809043499sz28b {
+        background-color: #fbfbfb;
+        width: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 0px solid transparent;
+        border-radius: 0px;
+        font-family: Arial;
+        box-shadow: none;
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: 0px;
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data .dropdown {
+        width: 100%;
+        font-size: inherit;
+        color: #000000;
+        background-color: #ffffff;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        height: 35px;
+        border: 1px solid #c2cfe0;
+        border-radius: 0px;
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .rating-wrapper
+        label {
+        border: 1px solid lightgray;
+        color: #000000;
+        background-color: #ffffff;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        border-radius: 0.4rem;
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .rating-wrapper
+        label
+        input:checked
+        ~ div {
+        background-color: #ed5a6c;
+        border-radius: 0.4rem;
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .rating-wrapper
+        label
+        input:checked
+        ~ .font {
+        color: #fff;
+        font-size: 35px;
+        background-color: transparent;
+      }
+
+      .template_blocks .generated_1601809043499sz28b .data .rating-wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        justify-content: flex-start;
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .rating-wrapper
+        label
+        span {
+        font-size: 20px;
+      }
+
+      .template_blocks
+        .generated_1601809043499sz28b
+        .data
+        .rating-wrapper
+        label
+        .smFont {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .template_blocks
+          .generated_1601809043499sz28b
+          .data
+          .rating-wrapper
+          label {
+          width: 25px;
+          height: 25px;
+          margin-right: auto;
+        }
+
+        .template_blocks
+          .generated_1601809043499sz28b
+          .data
+          .rating-wrapper
+          label
+          .responsive {
+          font-size: 14px;
+        }
+
+        .template_blocks
+          .generated_1601809043499sz28b
+          .data
+          .rating-wrapper
+          label
+          .smFont {
+          font-size: 12px;
+        }
+      }
+
+      .template_blocks_default {
+        width: 600px;
+        word-break: break-word;
+      }
+
+      .bodyClass {
+        background-color: #fafafa;
+      }
+
+      @media screen and (max-width: 600px) {
+        .template_blocks_default {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bodyClass">
+    <span style="display: none"
+      >Your Interactive AMP email marketing experience begins here</span
+    >
+    <div
+      style="width: 100%; max-width: 600px; margin: 0px auto"
+      class="generated_1601743514241 template_blocks"
+      id="generated_1601743514241"
+    >
+      <div
+        style="
+          font-size: 0px;
+          text-align: left;
+          background: white;
+          padding-top: 25px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+        "
+        class="tb1-header generated_1601743514241_container"
+        align="center"
+      >
+        <a
+          style="text-decoration: none"
+          href="https://mm-tracker-prod.azurewebsites.net//clicks?email=ef9adbd7-58a1-5141-a08b-c984cd7ffc03&type=amp&info=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjYzU2NzA4ZC0wNTU4LTRmZWEtOGMwNy1hNGJmYTVhN2I3OWIiLCJjYW1wYWlnbklkIjoiYjgzNGZhNWUtNzhhYi00ZjY3LTk2MDEtYWU5NDcxZThhOTYyIiwiaWF0IjoxNjAxOTIxOTgwfQ.YaifVaw49m8BJg2viDTRaeUeMMyrZhpVtU6SFIbrbv8&redirect=4a00516c-3729-56dc-9a93-d1c9e292304a"
+        >
+          <amp-img
+            style="
+              display: inline-block;
+              height: auto;
+              outline: none;
+              text-decoration: none;
+              width: 160px;
+              max-width: 100%;
+            "
+            width="768"
+            height="146"
+            layout="responsive"
+            alt="#"
+            src="https://mmstorageprod1.blob.core.windows.net/userdata/cc56708d-0558-4fea-8c07-a4bfa5a7b79b%2Ftemplates%2F1601743567497_mail-modo-logo2.png?a=1"
+            class="header-img-full"
+          >
+          </amp-img>
+        </a>
+      </div>
+    </div>
+    <div
+      align="center"
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      class="generated_1601737740481 template_blocks"
+      id="generated_1601737740481"
+    >
+      <table
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="padding: 0px; word-break: break-word; background: white"
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 40px 10px 10px 20px;
+                        font-weight: bold;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgb(51, 51, 51);
+                        word-break: break-word;
+                        text-align: left;
+                        font-family: Verdana;
+                        font-size: 18px;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                      "
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      Welcome to Mailmodo Family 😍
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      align="center"
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      class="generated_1601744790944 template_blocks"
+      id="generated_1601744790944"
+    >
+      <table
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="padding: 0px; word-break: break-word; background: white"
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 5px 10px 30px 20px;
+                        font-weight: normal;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgb(88, 88, 225);
+                        word-break: break-word;
+                        text-align: left;
+                        font-family: Verdana;
+                        font-size: 16px;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                      "
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      A world of actionable & interactive email marketing
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      id="generated_1601817116647"
+      class="generated_1601817116647 template_blocks"
+      style="width: 100%"
+    >
+      <div
+        align="center"
+        class="tb2"
+        style="
+          max-width: 600px;
+          margin: 0px auto;
+          font-size: 0px;
+          text-align: center;
+          padding-left: 0px;
+          padding-right: 0px;
+          background: white;
+        "
+      >
+        <a style="text-decoration: none; border: 0 auto">
+          <amp-img
+            class="banner-image-002"
+            src="https://mmstorageprod1.blob.core.windows.net/userdata/cc56708d-0558-4fea-8c07-a4bfa5a7b79b%2Ftemplates%2F1601818336234_Group%2016444%403x.png?a=1"
+            height="600"
+            width="1632"
+            layout="responsive"
+            alt="image"
+            style="
+              display: inline-block;
+              width: 100%;
+              max-width: 100%;
+              height: auto;
+            "
+          >
+          </amp-img>
+        </a>
+      </div>
+    </div>
+    <div
+      class="generated_1601738938655 template_blocks"
+      id="generated_1601738938655"
+      style="width: 100%; max-width: 600px; margin: auto"
+    >
+      <div class="generated_1601738938655sz28b">
+        <form
+          custom-validation-reporting="show-all-on-submit"
+          method="post"
+          action-xhr="https://mm-tracker-prod.azurewebsites.net/submissions?email=ef9adbd7-58a1-5141-a08b-c984cd7ffc03&type=amp&info=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjYzU2NzA4ZC0wNTU4LTRmZWEtOGMwNy1hNGJmYTVhN2I3OWIiLCJjYW1wYWlnbklkIjoiYjgzNGZhNWUtNzhhYi00ZjY3LTk2MDEtYWU5NDcxZThhOTYyIiwiaWF0IjoxNjAxOTIxOTgwfQ.YaifVaw49m8BJg2viDTRaeUeMMyrZhpVtU6SFIbrbv8&sender=magic@mailmodo.com&formId=0"
+          data-initialize-from-url
+        >
+          <div class="data">
+            <amp-state id="generated_1601738938655sz28b">
+              <script type="application/json">
+                { "currentwindow": "0" }
+              </script>
+            </amp-state>
+            <input name="email" style="display: none;" data-allow-initialization>
+            <div
+              class="screen current_screen"
+              data-amp-bind-hidden="generated_1601738938655sz28b.currentwindow != 0"
+            >
+              <div class="question _s_question">
+                Guess what all you can add in an email with Mailmodo?*
+              </div>
+              <div
+                class="multiselect-wrapper optionCollection"
+                tabindex="1"
+                role="input"
+                on="input-throttled:AMP.setState({generated_1601738938655sz28b :{formRequiredState00: event.value.length == 0 ? false : true }})"
+                id="v00"
+              >
+                <label class="option optionColor"
+                  ><input
+                    name="Guess what all you can add in an email with Mailmodo?"
+                    type="radio"
+                    value="Form"
+                  /><span class="optionText _checkmark">Form</span></label
+                ><label class="option optionColor"
+                  ><input
+                    name="Guess what all you can add in an email with Mailmodo?"
+                    type="radio"
+                    value="Calendar"
+                  /><span class="optionText _checkmark">Calendar</span></label
+                ><label class="option optionColor"
+                  ><input
+                    name="Guess what all you can add in an email with Mailmodo?"
+                    type="radio"
+                    value="Rating"
+                  /><span class="optionText _checkmark">Rating</span></label
+                ><label class="option optionColor"
+                  ><input
+                    name="Guess what all you can add in an email with Mailmodo?"
+                    type="radio"
+                    value="Text"
+                  /><span class="optionText _checkmark">Text</span></label
+                ><label class="option optionColor"
+                  ><input
+                    name="Guess what all you can add in an email with Mailmodo?"
+                    type="radio"
+                    value="Image"
+                  /><span class="optionText _checkmark">Image</span></label
+                ><label class="option optionColor"
+                  ><input
+                    name="Guess what all you can add in an email with Mailmodo?"
+                    type="radio"
+                    value="All of above"
+                  /><span class="optionText _checkmark"
+                    >All of above</span
+                  ></label
+                >
+              </div>
+              <div class="button_store">
+                <button
+                  class="button"
+                  type="button"
+                  on="tap:AMP.setState({generated_1601738938655sz28b : {currentwindow: (generated_1601738938655sz28b.formRequiredState00) == true ? 1 : 0, alertTrigger: (generated_1601738938655sz28b.formRequiredState00) == true ? 1 : 0 }});"
+                >
+                  Next
+                </button>
+                <div
+                  hidden
+                  data-amp-bind-hidden="generated_1601738938655sz28b.alertTrigger != 0"
+                  style="
+                    color: red;
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 10px;
+                    line-height: 1.2;
+                  "
+                >
+                  Fields marked with (*) are 'Required', Please answer all the
+                  'Required' fields.
+                </div>
+              </div>
+            </div>
+            <div
+              class="screen"
+              hidden
+              data-amp-bind-hidden="generated_1601738938655sz28b.currentwindow != 1"
+            >
+              <div>
+                <label>
+                  <div class="question">
+                    How are you planning to use Mailmodo at your company?*
+                  </div>
+                  <textarea
+                    style="font-family: Arial"
+                    class="input1 input"
+                    name="How are you planning to use Mailmodo at your company?"
+                    rows="10"
+                    cols="30"
+                    placeholder="Enter your answer"
+                    required="true"
+                    tabindex="1"
+                    role="input"
+                    on="input-throttled:AMP.setState({generated_1601738938655sz28b :{formRequiredState10: event.value.length == 0 ? false : true}})"
+                  >
+                  </textarea>
+                </label>
+              </div>
+              <div class="button_store">
+                <button
+                  class="button"
+                  type="button"
+                  on="tap:AMP.setState({generated_1601738938655sz28b : {currentwindow: (generated_1601738938655sz28b.formRequiredState10) == true ? 2 : 1, alertTrigger: (generated_1601738938655sz28b.formRequiredState10) == true ? 1 : 0 }});"
+                >
+                  Next
+                </button>
+                <div
+                  hidden
+                  data-amp-bind-hidden="generated_1601738938655sz28b.alertTrigger != 0"
+                  style="
+                    color: red;
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 10px;
+                    line-height: 1.2;
+                  "
+                >
+                  Fields marked with (*) are 'Required', Please answer all the
+                  'Required' fields.
+                </div>
+              </div>
+            </div>
+            <div
+              class="screen"
+              hidden
+              data-amp-bind-hidden="generated_1601738938655sz28b.currentwindow != 2"
+            >
+              <div class="question _s_question">
+                How likely are you to continue using it at your organisation?
+                <p style="font-size: 12px; margin: 0; color: #e5e2e2">
+                  10 being the highest & 1 being the lowest
+                </p>
+              </div>
+              <div class="rating-wrapper">
+                <label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="1"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="1"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">1</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="2"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="2"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">2</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="3"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="3"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">3</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="4"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="4"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">4</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="5"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="5"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">5</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="6"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="6"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">6</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="7"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="7"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">7</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="8"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="8"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">8</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="9"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="9"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">9</span></label
+                ><label class="option"
+                  ><input
+                    name="How likely are you to continue using it at your organisation?"
+                    type="radio"
+                    role="input"
+                    tabindex="10"
+                    on="tap:AMP.setState({generated_1601738938655sz28b: { [[stateContent]] }})"
+                    value="10"
+                  />
+                  <div class="divClass"></div>
+                  <span class="smFont responsive ratingText">10</span></label
+                >
+              </div>
+              <div class="button_store">
+                <button
+                  class="button"
+                  type="button"
+                  on="tap:AMP.setState({generated_1601738938655sz28b : {currentwindow: 3}});"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+            <div
+              class="screen"
+              hidden
+              data-amp-bind-hidden="generated_1601738938655sz28b.currentwindow != 3"
+            >
+              <div id="date-time">
+                <label
+                  ><div class="question _s_question">
+                    How did you get to hear about Mailmodo?
+                  </div>
+                  <select
+                    class="val1 optionCollection dropdown"
+                    name="How did you get to hear about Mailmodo?"
+                  >
+                    <option class="option" value="Choose option">
+                      Choose option
+                    </option>
+                    <option class="option" value="Search Engine">
+                      Search Engine
+                    </option>
+                    <option class="option" value="Social Media">
+                      Social Media
+                    </option>
+                    <option class="option" value="AMP website">
+                      AMP website
+                    </option>
+                    <option class="option" value="Product Hunt">
+                      Product Hunt
+                    </option>
+                    <option class="option" value="Friend">Friend</option>
+                    <option class="option" value="Other">Other</option>
+                  </select></label
+                >
+              </div>
+              <div class="button_store">
+                <button
+                  class="button"
+                  type="submit"
+                  on="tap:AMP.setState({generated_1601738938655sz28b : {currentwindow: 4}});"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+            <div
+              class="screen"
+              hidden
+              data-amp-bind-hidden="generated_1601738938655sz28b.currentwindow != 4"
+            >
+              <div submit-success>
+                <template type="amp-mustache"
+                  ><amp-img
+                    layout="responsive"
+                    class="validatorImage"
+                    tabindex="1"
+                    src="https://mmstorageprod1.blob.core.windows.net/userdata/cc56708d-0558-4fea-8c07-a4bfa5a7b79b%2Ftemplates%2F1601751850906_sucess%20icon.png"
+                    alt="Typeform"
+                    width="64"
+                    height="64"
+                    style="transform: translateY(10px)"
+                  ></amp-img>
+                  <div class="validatorText">
+                    That's all. Make sure you create your own email template
+                    now.
+                  </div>
+                  <div
+                    class="submit"
+                    style="text-align: center; padding-top: 10px"
+                  >
+                    <a href="https://manage.mailmodo.com/"
+                      ><button
+                        type="button"
+                        role="proceed"
+                        class="validatorButton"
+                        tabindex="1"
+                        style="
+                          background-color: #59c68c;
+                          width: auto;
+                          height: auto;
+                          padding: 10px 30px 10px 30px;
+                          font-size: 14px;
+                        "
+                      >
+                        Create Your Own Email
+                      </button></a
+                    >
+                  </div></template
+                >
+              </div>
+              <div submit-error>
+                <template type="amp-mustache"
+                  ><amp-img
+                    layout="responsive"
+                    class="validatorImage"
+                    tabindex="1"
+                    src="https://firebasestorage.googleapis.com/v0/b/mailmodo-prod.appspot.com/o/form%20images%2Ferror3.png?alt=media&token=ec876a57-e8f4-4a3b-8e86-d9e8002d87c1"
+                    alt="Typeform"
+                    width="200"
+                    height="200"
+                    style="transform: translateY(10px)"
+                  ></amp-img>
+                  <div class="validatorText">Error! Please try again</div>
+                  <div
+                    class="submit"
+                    style="text-align: center; padding-top: 10px"
+                  >
+                    <a href="https://manage.mailmodo.com/"
+                      ><button
+                        type="button"
+                        role="proceed"
+                        class="validatorButton"
+                        tabindex="1"
+                        style="
+                          background-color: #59c68c;
+                          width: auto;
+                          height: auto;
+                          padding: 10px 30px 10px 30px;
+                          font-size: 14px;
+                        "
+                      >
+                        Visit Website
+                      </button></a
+                    >
+                  </div></template
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      align="center"
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      class="generated_1601738507358 template_blocks"
+      id="generated_1601738507358"
+    >
+      <table
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="
+                padding: 20px 0px 0px;
+                word-break: break-word;
+                background: white;
+              "
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 20px 3% 10px;
+                        font-weight: bold;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgb(51, 51, 51);
+                        word-break: break-word;
+                        text-align: justify;
+                        font-family: Verdana;
+                        font-size: 16px;
+                        letter-spacing: 0px;
+                        line-height: 1.6;
+                      "
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      As next steps, make sure to the following:
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      align="center"
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      class="generated_1601818623244 template_blocks"
+      id="generated_1601818623244"
+    >
+      <table
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="padding: 0px; word-break: break-word; background: white"
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 10px 3% 40px;
+                        font-weight: normal;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgb(51, 51, 51);
+                        word-break: break-word;
+                        text-align: justify;
+                        font-family: Verdana;
+                        font-size: 14px;
+                        letter-spacing: 0px;
+                        line-height: 1.6;
+                      "
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      1. Setup your domain and sender email id. You can use
+                      Mailmodo's SMTP or your existing SMTP<br /><br />2. Get
+                      your sender email whitelisted to send AMP email from Gmail
+                      & Yahoo<br /><br />3. Create & send amazing emails
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      id="generated_1601821084710"
+      class="generated_1601821084710"
+      align="center"
+      style="
+        background-color: #ffffffff;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      "
+    >
+      <div
+        align="center"
+        class="tb2-b"
+        style="
+          max-width: 600px;
+          background: rgb(255, 255, 255);
+          font-size: 0px;
+          margin: 0px auto;
+          text-align: center;
+          padding-left: 0px;
+        "
+      >
+        <a style="text-decoration: none">
+          <amp-img
+            width="200"
+            height="200"
+            style="
+              display: inline-block;
+              width: 100px;
+              height: 100px;
+              max-width: 100%;
+            "
+            class="banner-image-002-a"
+            layout="responsive"
+            src="https://mmstorageprod1.blob.core.windows.net/userdata/cc56708d-0558-4fea-8c07-a4bfa5a7b79b%2Ftemplates%2F1601821493004_animation_200_kfv748vx.gif?a=1"
+            alt="gif-banner"
+          >
+          </amp-img
+        ></a>
+      </div>
+    </div>
+    <div
+      align="center"
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      class="generated_1601818587439 template_blocks"
+      id="generated_1601818587439"
+    >
+      <table
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="
+                padding: 0px;
+                word-break: break-word;
+                background: rgb(255, 255, 255);
+              "
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 0px 3% 10px;
+                        font-weight: bold;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgb(51, 51, 51);
+                        word-break: break-word;
+                        text-align: center;
+                        font-family: Verdana;
+                        font-size: 16px;
+                        letter-spacing: 0px;
+                        line-height: 1;
+                      "
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      Need Help? Book a meeting
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      align="center"
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      class="generated_1601818816653 template_blocks"
+      id="generated_1601818816653"
+    >
+      <table
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="
+                padding: 0px;
+                word-break: break-word;
+                background: rgb(255, 255, 255);
+              "
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 0px 3% 20px;
+                        font-weight: normal;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgb(130, 130, 130);
+                        word-break: break-word;
+                        text-align: center;
+                        font-family: Verdana;
+                        font-size: 14px;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                      "
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      Our email expert will get back to you in no time. You can
+                      also reply to this email or call us at +12626002002.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="generated_1601809043499 template_blocks"
+      id="generated_1601809043499"
+      style="width: 100%; max-width: 600px; margin: auto"
+    >
+      <div class="generated_1601809043499sz28b">
+        <form
+          custom-validation-reporting="show-all-on-submit"
+          method="post"
+          action-xhr="https://mm-tracker-prod.azurewebsites.net//submissions?email=ef9adbd7-58a1-5141-a08b-c984cd7ffc03&type=amp&info=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjYzU2NzA4ZC0wNTU4LTRmZWEtOGMwNy1hNGJmYTVhN2I3OWIiLCJjYW1wYWlnbklkIjoiYjgzNGZhNWUtNzhhYi00ZjY3LTk2MDEtYWU5NDcxZThhOTYyIiwiaWF0IjoxNjAxOTIxOTgwfQ.YaifVaw49m8BJg2viDTRaeUeMMyrZhpVtU6SFIbrbv8&sender=magic@mailmodo.com&formId=1"
+          data-initialize-from-url
+        >
+          <div class="data">
+            <amp-state id="generated_1601809043499sz28b"
+              ><script type="application/json">
+                { "currentwindow": "0" }
+              </script></amp-state
+            >
+            <div
+              class="screen current_screen"
+              data-amp-bind-hidden="generated_1601809043499sz28b.currentwindow != 0"
+            >
+            <input name="email" style="display: none;" data-allow-initialization>
+              <div id="date-time dt">
+                <label
+                  ><div class="question _s_question">Booking Date</div>
+                  <input class="val1 hz input" type="date" name="Booking Date"
+                /></label>
+              </div>
+              <div id="date-time">
+                <label
+                  ><div class="question _s_question">Booking Time</div>
+                  <select
+                    class="val1 optionCollection dropdown"
+                    name="Booking Time"
+                  >
+                    <option class="option" value="10:00">10:00</option>
+                    <option class="option" value="10:30">10:30</option>
+                    <option class="option" value="11:00">11:00</option>
+                    <option class="option" value="11:30">11:30</option>
+                    <option class="option" value="12:00">12:00</option>
+                    <option class="option" value="12:30">12:30</option>
+                    <option class="option" value="13:00">13:00</option>
+                    <option class="option" value="13:30">13:30</option>
+                    <option class="option" value="14:00">14:00</option>
+                  </select></label
+                >
+              </div>
+              <div class="button_store">
+                <button
+                  class="button"
+                  type="submit"
+                  on="tap:AMP.setState({generated_1601809043499sz28b : {currentwindow: 1}});"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div
+              class="screen"
+              hidden
+              data-amp-bind-hidden="generated_1601809043499sz28b.currentwindow != 1"
+            >
+              <div submit-success>
+                <template type="amp-mustache"
+                  ><amp-img
+                    layout="responsive"
+                    class="validatorImage"
+                    tabindex="1"
+                    src="https://firebasestorage.googleapis.com/v0/b/mailmodo-prod.appspot.com/o/form%20images%2FVector%20(1).png?alt=media&token=5e4a94ec-a360-4930-8412-213a4ee4658b"
+                    alt="Typeform"
+                    width="90"
+                    height="91"
+                    style="transform: translateY(10px)"
+                  ></amp-img>
+                  <div class="validatorText">
+                    Thanks for completing this form
+                  </div>
+                  <div
+                    class="submit"
+                    style="text-align: center; padding-top: 10px"
+                  >
+                    <a href="https://manage.mailmodo.com/"
+                      ><button
+                        type="button"
+                        role="proceed"
+                        class="validatorButton"
+                        tabindex="1"
+                        style="
+                          background-color: #59c68c;
+                          width: auto;
+                          height: auto;
+                          padding: 10px 30px 10px 30px;
+                          font-size: 14px;
+                        "
+                      >
+                        Visit Website
+                      </button></a
+                    >
+                  </div></template
+                >
+              </div>
+              <div submit-error>
+                <template type="amp-mustache"
+                  ><amp-img
+                    layout="responsive"
+                    class="validatorImage"
+                    tabindex="1"
+                    src="https://firebasestorage.googleapis.com/v0/b/mailmodo-prod.appspot.com/o/form%20images%2Ferror3.png?alt=media&token=a256c3c6-a596-4b51-9041-2824ef50f7eb"
+                    alt="Typeform"
+                    width="200"
+                    height="200"
+                    style="transform: translateY(10px)"
+                  ></amp-img>
+                  <div class="validatorText">Error! Please try again</div>
+                  <div
+                    class="submit"
+                    style="text-align: center; padding-top: 10px"
+                  >
+                    <a href="https://calendly.com/aquibur/mailmodo"
+                      ><button
+                        type="button"
+                        role="proceed"
+                        class="validatorButton"
+                        tabindex="1"
+                        style="
+                          background-color: #59c68c;
+                          width: auto;
+                          height: auto;
+                          padding: 10px 30px 10px 30px;
+                          font-size: 14px;
+                        "
+                      >
+                        Schedule Meeting
+                      </button></a
+                    >
+                  </div></template
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      style="margin: 0px auto; width: 100%; max-width: 600px"
+      align="center"
+      class="generated_1601756042322 template_blocks"
+      id="generated_1601756042322"
+    >
+      <table
+        style="border: 0px; border-collapse: collapse; border-spacing: 0px"
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        class="template_blocks_default text-001-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              style="padding: 0px; word-break: break-word; background: white"
+              align="left"
+              data-lm-text="true"
+              data-gramm="false"
+              class="margin"
+              data-font="Primary"
+              data-text="Footer Description"
+            >
+              <table
+                style="border: 0px; border-spacing: 0px; width: 100%"
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                class="content"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      style="
+                        padding: 10px;
+                        font-weight: normal;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: black;
+                        word-break: break-word;
+                        text-align: center;
+                        font-family: Arial;
+                        font-size: 11px;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                      "
+                      align="center"
+                      data-lm-text="true"
+                      data-gramm="false"
+                      class="padding info"
+                      data-font="Primary"
+                      data-text="Footer Description"
+                    >
+                      Mailmodo Technologies Inc<br />
+                      355 Bryant Street, Unit 403 San Francisco, CA 94107
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <amp-img
+      src="https://mm-tracker-prod.azurewebsites.net//opens?email=ef9adbd7-58a1-5141-a08b-c984cd7ffc03&type=html&info=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjYzU2NzA4ZC0wNTU4LTRmZWEtOGMwNy1hNGJmYTVhN2I3OWIiLCJjYW1wYWlnbklkIjoiYjgzNGZhNWUtNzhhYi00ZjY3LTk2MDEtYWU5NDcxZThhOTYyIiwiaWF0IjoxNjAxOTIxOTgwfQ.YaifVaw49m8BJg2viDTRaeUeMMyrZhpVtU6SFIbrbv8"
+      height="1px"
+      width="1px"
+    ></amp-img>
+  </body>
+</html>

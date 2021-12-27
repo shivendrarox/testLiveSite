@@ -1,0 +1,124 @@
+.brands_fold{
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 180px;
+    margin-top: 39px;
+}
+.tabs_fold{
+    padding-bottom: 130px;
+    background-image: url("https://res.cloudinary.com/mailmodo/image/upload/q_10/v1637143494/strapi/tabs_bg_de2b00f8ab.webp");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    .hide_mobile{
+        display: none;
+    }
+    .heading{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .tab_item_heading{
+        padding-top: 40px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 51px;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+    .tab_head{
+        display: flex;
+        flex-direction: row;
+        min-width: 44px;
+        align-items: center;
+        .tab_head_icon{
+            width: 30%;
+        }
+        .tab_head_heading{
+            padding-left: 14px;
+            width: 70%;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+}
+
+//Mobile, ipad
+@media only screen and (max-width: 800px) {
+  
+    .brands_fold{
+        margin-top: 26px;
+        margin-bottom: 34px;
+    }
+    .tabs_fold{
+        padding-top: 36px;
+        padding-bottom: 78px;
+        .desktop_only{
+            display: none;
+        }
+        .hide_mobile{
+            display: initial;
+        }
+        .heading{
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            padding: 0px 36px;
+            padding-bottom: 28px;
+        }
+        .home_tab_head_heading{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        .tab_item_heading{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+}
+
+// For smaller laptops,netbooks
+@media only screen and (max-height:800px) and (min-width:900px){
+ 
+    .tabs_fold{
+        button{
+            font-size: 18px;
+            padding:18px 28px ;
+        }
+        .heading{
+            padding-bottom: 20px;
+            font-size: 30px;
+        }
+        .tab_head_heading{
+            font-size: 1;
+        }
+        .tab_item_heading{
+            padding-top:20px;
+        }
+    }
+  
+}

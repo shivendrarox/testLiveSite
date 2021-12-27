@@ -1,0 +1,532 @@
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    width: 0px;
+    height: 0px;
+  }
+  .show{
+    text-align: center;
+    width: 300px;
+    height: 400px;//Keeping same height so not glitch
+    // height: auto;
+    visibility: show;
+    opacity: 1;
+    transition: visibility 0s 0.5s, opacity 0.5s linear; 
+  }
+  .hide_tick{
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+.ebook_modal_container{
+    width: 300px;
+
+    .modal_input_label{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 17px;
+        color: black;
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+    h2{
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    .cta_btn{
+        span:first-of-type{
+            position: relative;
+            position: relative;
+            bottom: 2px;
+            right: 4px;
+        }
+        border: none;
+        padding: 12px 28px;
+        width: 19rem;
+        max-width: 25rem;
+
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #FFFFFF;
+        background: #786AFF;
+        border-radius: 8px;
+        width: 100%;
+        align-self: center;
+        &:focus {
+            border-color: #a294ff;
+            border-right-width: 1px!important;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgb(120 106 255 / 20%);
+        }
+    }
+    .modal_input{
+        border: 0.083rem solid rgb(168, 168, 168);
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        transition: all .3s;
+        &:focus {
+            border-color: #a294ff;
+            border-right-width: 1px!important;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgb(120 106 255 / 20%);
+        }
+        
+        font-size: 18px;
+        max-width: 450px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+.hero{
+    background: #FFFFFF;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .bg_img{
+        position: absolute;
+        top:-120px;
+        margin-left:-256px;
+        width: 500px;
+    }
+ 
+    .heading{
+        padding-top: 0.8rem;
+        padding-bottom: 0.7rem;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size:3.9rem;
+        line-height: 4.6rem;
+        /* or 122% */
+    
+        letter-spacing: -0.02em;
+        font-feature-settings: 'liga' off;
+    
+        /* Text / Gray 900 */
+    
+        color: #18191F;
+    }
+    .hero_p{
+        width: 98%;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        /* or 136% */
+        
+        
+        /* Text / Gray 900 */
+        
+        color: #18191F;
+        
+        opacity: 0.74;
+    }
+    .cta_text{
+        font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    
+    /* Text / Gray 900 */
+    
+    color: #18191F;
+    
+    opacity: 0.74;
+    }
+    .cta_btn{
+        span:first-of-type{
+            position: relative;
+            position: relative;
+            bottom: 2px;
+            right: 4px;
+        }
+        border: none;
+        padding: 12px 28px;
+        width: 20rem;
+        max-width: 25rem;
+
+        font-family: Inter;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #FFFFFF;
+        background: #786AFF;
+        border-radius: 8px;
+    }
+    .cta_input{
+        width: 19rem;
+        padding: 10px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        max-width: 25rem;
+
+        font-family: Inter;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #18191F;
+        opacity: 0.74;
+    }
+    // .hero_video{
+    //     width: 60%;
+    //     border:none;
+    //     margin: 0;
+    //     margin-top: 20px;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     -ms-transform: translate(-50%, -50%);
+    //     transform: translate(-50%, -50%);
+    // }
+    .hero_img_right{
+        width: 100%;
+    }
+}
+
+
+.section{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .heading{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 45px;
+        // line-height: 45px;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #18191F;
+        padding-bottom: 3rem;
+    }
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        // font-size: 22px;
+        // line-height: 21px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        font-feature-settings: 'liga' off;
+        color: #18191F;
+        opacity: 0.84;
+    }
+    .desc_title{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        // font-size: 20px;
+        // line-height: 24px;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        display: flex;
+        align-items: center;
+        font-feature-settings: 'liga' off;
+        
+        /* Text / Gray 900 */
+        
+        color: #18191F;
+        
+        opacity: 0.84;
+    }
+    .desc{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 18px;
+        // line-height: 28px;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #000000;
+        opacity: 0.64;
+        li{
+            padding-bottom: 4rem;
+            list-style-type: none;
+
+        }
+        .custom_li{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            .marker_img{
+                width: 1rem;
+                margin-right: 1ch;
+                margin-top: 0.7rem;
+            }
+        }
+    }
+    .image{
+        width: 100%;
+    }
+}
+
+
+
+.Faq{
+    padding-top:6rem;
+    padding-bottom: 6rem;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    .heading{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        color: #171A22;
+    }
+    .desc{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 18px;
+        // line-height: 32px;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: rgba(0, 0, 0, 0.64);
+    }
+    .accord_btn{
+        padding: 12px;
+        border-radius: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        background: #FAFAFA;
+        width: 100%;
+        box-shadow: none;
+        text-align: justify;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 14px;
+        // line-height: 22px;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: rgba(0, 0, 0, 0.85);
+        ul{
+            padding-left: 10px;
+            li{
+                list-style-type: none;
+                list-style-position: inside;
+                // list-style-image: url(/static/images/type1/left.svg);
+                /* OR */
+                //list-style-type: '👉';
+                //padding-inline-start: 1ch;
+            }
+        }
+    }
+    .accord_btn:focus{
+        text-decoration: none;
+    }
+    .accord_btn:hover{
+        text-decoration: none;
+    }
+    .accord_card{
+        border-radius: 0px;
+        // font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: rgba(0, 0, 0, 0.64);
+        p{
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+.EndBlock{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .cta_btn{
+        span:first-of-type{
+            position: relative;
+            position: relative;
+            bottom: 2px;
+            right: 4px;
+        }
+        max-width: 25rem;
+        border: none;
+        padding: 12px 30px;
+
+        font-family: Inter;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #FFFFFF;
+        background: #786AFF;
+        border-radius: 8px;
+    }
+    .cta_input{
+        margin-right: 10px;
+        max-width: 25rem;
+        padding: 10px;
+        font-family: Inter;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #18191F;
+        opacity: 0.74;
+    }
+    .heading{
+        text-align: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #18191F;
+
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .cta{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .hero{
+        background-image: none;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .cta{
+            padding-top:1rem;
+            text-align: center;
+            margin: 0;
+
+        }
+        .cta_btn{
+            width: 80%;
+        }
+        .cta_input{
+            width: 80%;
+            margin-bottom: 1rem;
+            margin-right: 0;
+        }
+        .hero_p{
+            text-align: center;
+        }
+        .button_google_signup {
+            a {
+              margin-top: 0.2rem;
+            }
+          }
+        .heading{
+            width: 100%;
+            //font-size: 44px;
+            //line-height: 44px;
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+            text-align: center;
+        }
+        .cta_text{
+            font-size: 10px;
+        }
+        .hero_video{
+            width: 100%;
+            display: block;
+            position: relative;
+            margin: 0px;
+        }
+        .left_padding{
+             padding-left: 3rem;
+        }
+    }
+    .section{
+        padding-top:4rem;
+        padding-bottom: 4rem;
+        .section_img_container{
+            width: 100% !important;
+        }
+        .heading{
+            margin: 0;
+            font-size: 3.2rem;
+            line-height: 4.2rem;
+            text-align: left;
+        }
+        .desc{
+            li{
+                //margin-left: 1.5rem;
+            }
+        }
+    }
+
+    
+    .Faq{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .EndBlock{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .heading{
+            text-align: center;
+        }
+        .cta{
+            padding-top:16px;
+            text-align: center;
+            margin: 0;
+            padding-left:5%;
+        }
+        .cta_btn{
+            width: 80%;
+        }
+        .cta_input{
+            width: 80%;
+            margin-bottom: 1rem;
+            margin-right: 0px;
+        }
+        .heading{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .button{
+            font-size: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+        }
+    }
+
+  }

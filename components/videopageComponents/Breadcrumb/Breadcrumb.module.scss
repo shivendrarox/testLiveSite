@@ -1,0 +1,62 @@
+.breadcrumb_wrapper {
+    background-color: #ffffff;
+    //border-top: 1px solid rgba(0, 0, 0, 0.08);
+    //padding-bottom: 1.565rem;
+    .breadcrumb {
+      background-color: transparent;
+      margin-bottom: 0;
+      .breadcrumb_item + .breadcrumb_item::before {
+        content: "";
+        background: url("/static/images/icon/chevron.svg") no-repeat;
+        width: 7px;
+        height: 12px;
+        position: absolute;
+        top: 6px;
+        left: -11px;
+      }
+      .breadcrumb_item {
+        padding-left: 0;
+        padding-right: 0.5rem;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        opacity: 0.4;
+        &:before {
+          display: none;
+        }
+        &:last-child {
+          img {
+            display: none;
+          }
+        }
+        a {
+          color: #000000;
+          font-size: 1.125rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          &:hover {
+            text-decoration: underline;
+          }
+          &[disabled] {
+            pointer-events: none;
+            //opacity: 0.6;
+          }
+        }
+        img {
+          margin-left: 5px;
+          width: 8px;
+        }
+      }
+    }
+  }
+//   .dark-breadcrumb{
+//     background-color: #353535;
+//       a{
+//         color: #FFFFFF !important;
+//         opacity: 0.74 !important;
+//       }
+//       img{
+//         filter: invert(1);
+//       }
+//   }

@@ -1,0 +1,278 @@
+.form_msg{
+    padding-top: 12px;
+
+}
+.hero_fold{
+    background-color: white;
+    .heading_container{
+        display: flex;
+        align-items: center;
+        h1{
+            margin-bottom: 0;
+        }
+    }
+    .hero_img_container{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .hero_content_container{
+       max-width : 947px;
+       width: 100%;
+       padding: 17px;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+      color : rgba(51, 65, 85, 1);
+       h1{
+        text-align: center;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 67px;
+        letter-spacing: -0.01em;
+        font-feature-settings: 'liga' off;
+        color : rgba(51, 65, 85, 1);
+    }
+    strong{
+        font-weight: 800;
+    }
+    p{
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+    }
+}
+.checklist_container{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    border-radius: 12px;
+    .prev_next_container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .prev_button{
+        display: block;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        cursor: pointer;
+        background: #fafafa;
+        border-radius: 8px;
+        padding: 13px 26px;
+        color: black;
+        font-weight: 500;
+        line-height: 1.25rem;
+        margin-bottom: 32px;
+        margin-right: 16px;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .next_button{
+        display: block;
+        border: none;
+        cursor: pointer;
+        background: #786aff;
+        border-radius: 8px;
+        padding: 13px 26px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.25rem;
+        margin-bottom: 32px;
+        margin-right: 32px;
+        opacity: 0.9;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    h2{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    input:checked{
+        background-color: rgba(117, 103, 246, 0.14);;
+      }
+    .tab_item{
+        font-size: 16px;
+    }
+    p{
+        color: #64748B;
+        margin: 0;
+    }
+
+    .checklist_item_container{
+        div{
+            margin-top: 20px;
+        }
+    }
+    label{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #334155;
+        margin-bottom: 0;
+    }
+    input{
+        margin-right:8px;
+        height: 19px;
+        width: 18px;
+        flex-basis: 5%;
+        margin-top: 8px;
+    }
+    .custom_container{
+        padding: 32px;
+    }
+}
+
+.reset_btn_container{
+    padding-bottom: 10px;
+    button{
+        display: block;
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        /* identical to box height, or 187% */
+
+        text-align: center;
+        font-feature-settings: 'liga' off;
+
+        /* apple-600 */
+        opacity: 0.9;
+        color: #5858E0;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.feedback_form{
+   
+        background-color: #f4f2ef;
+        border-radius: 16px;
+        padding: 40px;
+
+        h2{
+            font-size: 40px;
+            letter-spacing: 0px;
+            font-weight: 600;
+        }
+        .form_container{
+            padding: 0px 25px;
+        }
+    input{
+        border: 0.083rem solid rgb(168, 168, 168);
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        transition: all .3s;
+        &:focus {
+            border-color: #a294ff;
+            border-right-width: 1px!important;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgb(120 106 255 / 20%);
+        }
+    }
+    textarea{
+        border: 0.083rem solid rgb(168, 168, 168);
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        transition: all .3s;
+        &:focus {
+            border-color: #a294ff;
+            border-right-width: 1px!important;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgb(120 106 255 / 20%);
+        }
+    }
+    .next_button{
+        display: block;
+        margin-right: auto;
+        border: none;
+        cursor: pointer;
+        background: #786aff;
+        border-radius: 8px;
+        padding: 13px 26px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.25rem;
+        opacity: 0.9;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form_msg{
+        text-align: center;
+    }
+    .feedback_form{
+        h2{
+            font-size: 36px;
+        }
+        .form_container{
+            padding: 0;
+        }
+        input{
+            width: 100%;
+        }
+        .next_button{
+            margin-left: auto;
+        }
+    }
+    .hero_fold{
+        .hero_img_wrap{
+            width: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        // .hero_img_container{
+        //     margin: 0;
+        //     margin-right: auto;
+        // }
+        .hero_content_container{
+            width : 100%;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            h1{
+                text-align: left;
+                font-size: 30px;
+                line-height: 50px;
+            }
+            p{
+                text-align: left;
+                padding: 0px;
+                font-size: 17px;
+                line-height: 190%;
+            }
+         }
+
+    }
+    .reset_btn_container{
+        button{
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+ 
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <g id="Sending_campaign" transform="translate(-499 -675)">
+    <rect id="Rectangle_139143" data-name="Rectangle 139143" width="96" height="96" transform="translate(499 675)" fill="none"/>
+    <g id="Group_100435" data-name="Group 100435">
+      <path id="Path_58164" data-name="Path 58164" d="M0,0H88.544V88.544H0ZM0,0H88.544V88.544H0Z" transform="translate(503.159 679.159)" fill="none"/>
+      <path id="Path_58166" data-name="Path 58166" d="M58.631,4H8.292a6.284,6.284,0,0,0-6.261,6.292L2,48.047a6.311,6.311,0,0,0,6.292,6.292H58.631a6.311,6.311,0,0,0,6.292-6.292V10.292A6.311,6.311,0,0,0,58.631,4Zm0,12.585L33.462,32.316,8.292,16.585V10.292l25.17,15.731L58.631,10.292Z" transform="translate(513.97 683.074)" fill="#414141"/>
+      <g id="Group_77028" data-name="Group 77028" transform="translate(550.187 731.187)">
+        <rect id="Canvas" width="37" height="37" transform="translate(-0.187 -0.187)" fill="#20c58b" opacity="0"/>
+        <path id="Path_38972" data-name="Path 38972" d="M33.187,2.557l-32.1,9.576A.511.511,0,0,0,1,13.081l8.1,4.042Z" transform="translate(0.754 2.672)" fill="#20c58b"/>
+        <path id="Path_38973" data-name="Path 38973" d="M6.545,18.181l12.207,6.135a1.023,1.023,0,0,0,1.373-.455h0L29.6,3.182Z" transform="translate(6.84 3.326)" fill="#20c58b"/>
+        <path id="Path_38974" data-name="Path 38974" d="M5.04,11.625v7.811a.729.729,0,0,0,1.2.556l5.481-4.618Z" transform="translate(5.268 12.15)" fill="#20c58b"/>
+      </g>
+    </g>
+  </g>
+</svg>

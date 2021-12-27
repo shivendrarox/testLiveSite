@@ -1,0 +1,111 @@
+.case-studies-page {
+  .case-study-banner {
+    padding: 9rem 1rem;
+    background-color: #131d26;
+    text-align: center;
+    .banner-icon {
+      margin-bottom: 5rem;
+    }
+    .heading {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 2.5rem;
+    }
+    .para {
+      font-size: 1.5rem;
+      color: #ffffff;
+      opacity: 0.64;
+    }
+  }
+  .case-study-items {
+    background-color: #000000;
+    padding: 9rem 1rem;
+    .case-study-item {
+      margin-bottom: 14rem;
+      border-radius: 56px;
+      overflow: hidden;
+      .case-study-solution {
+        padding: 2.5rem 4rem;
+        background-color: #ffffff;
+        .icon {
+          margin-bottom: 30px;
+          height: 62px;
+        }
+        .heading {
+          font-size: 2rem;
+          color: #000000;
+          opacity: 0.74;
+          margin-bottom: 4rem;
+          text-align: left;
+        }
+        .card-text {
+          margin-bottom: 5rem;
+          .sub-heading {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #000000;
+          }
+          .para {
+            color: #000000;
+            opacity: 0.54;
+            font-size: 1.25rem;
+          }
+        }
+      }
+      .video-card-case {
+        padding: 2.5rem 4rem;
+        background-color: #3395ff;
+        &.second {
+          background-color: #f02027;
+        }
+        &.third {
+          background-color: #393939;
+        }
+        .head {
+          margin-bottom: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .text {
+            font-size: 2rem;
+            color: #ffffff;
+          }
+          .bold-text {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ffffff;
+          }
+          .icon {
+          }
+        }
+        .video-stream {
+          overflow: hidden;
+          border-radius: 30px;
+          .banner-case {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .case-studies-page .case-study-items .case-study-item .video-card-case .head {
+    position: relative;
+    display: block;
+    .text,
+    .bold-text {
+      display: block;
+    }
+    .icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  .case-studies-page .case-study-items .case-study-item .case-study-solution,
+  .case-studies-page .case-study-items .case-study-item .video-card-case {
+    padding: 2.5rem 2rem;
+  }
+}

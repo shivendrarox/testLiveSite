@@ -1,0 +1,63 @@
+{
+  "routes": [
+    {
+      "route": "/developers/*",
+      "serve": "/developers/"
+    },
+    {
+      "route": "/email-templates/",
+      "serve": "/email-templates/categories/all/index.html"
+    },
+    {
+      "route": "/template/",
+      "serve":"/email-templates/",
+      "statusCode": 301
+    },
+    {
+      "route": "/podcast/feed.xml",
+      "serve":"/podcastrss/feed.xml",
+      "statusCode": 301
+    },
+    {
+      "route": "/zoom-integration.html",
+      "serve":"https://help.mailmodo.com/en/articles/32-zoom-integration-with-mailmodo",
+      "statusCode": 301
+    },
+    {
+      "route": "/privacy/",
+      "serve":"/gdpr/privacypolicy/",
+      "statusCode": 301
+    },
+    {
+      "route": "/events/jay-oram/",
+      "serve":"/videos/jay-oram/",
+      "statusCode": 301
+    },
+    {
+      "route": "/events/ashwin-krishna/",
+      "serve":"/videos/ashwin-krishna/",
+      "statusCode": 301
+    },
+    {
+      "route": "/events/jens-lennartsson/",
+      "serve":"/videos/jens-lennartsson/",
+      "statusCode": 301
+    }
+    ,
+    {
+      "route": "/guides/ctr-vs-ctor/",
+      "serve":"/guides/ctor-vs-ctr/",
+      "statusCode": 301
+    },
+    {
+      "route": "/terms/",
+      "serve":"/gdpr/termsandconditions/",
+      "statusCode": 301
+    },
+    {
+      "route": "/email-stash/",
+      "serve":"/email-stash/newsletter/",
+      "statusCode": 301
+    }
+  ]
+}

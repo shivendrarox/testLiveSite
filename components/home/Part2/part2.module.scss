@@ -1,0 +1,328 @@
+.img_slider_fold{
+    background: url('https://res.cloudinary.com/mailmodo/image/upload/q_50/v1637254392/strapi/bg_2_6c289ee730.webp');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 70%;
+    background-color: #f6f5ff;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .heading{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0.5px;
+        text-align: center;  
+
+        padding-bottom: 45px;
+        max-width: 716px;
+        margin-left: auto;
+        margin-right: auto;      
+    }
+    .description{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0px;
+        text-align: center;    
+
+        padding-bottom: 45px;          
+    }
+
+    .slider_condtainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        .sticker_image{
+            position: absolute;
+            left: -130px;
+            bottom: 0px;
+        }
+        iframe{
+            // border: 1px solid red;
+            border: 0px;
+            max-width: 860px;
+            box-shadow: 0px 102.763px 82.2102px rgb(136 98 245 / 7%), 0px 42.9318px 34.3455px rgb(173 118 242 / 5%), 0px 22.9534px 18.3627px rgb(0 0 0 / 4%), 0px 12.8675px 10.294px rgb(0 0 0 / 4%), 0px 6.83383px 5.46706px rgb(0 0 0 / 3%), 0px 2.84371px 2.27497px rgb(0 0 0 / 2%);
+        }
+     
+    }
+}
+
+.img_slider_fold_additional_bg_img{
+    background: rgba(247, 247, 255, 1);
+    width: 100%;
+    position: relative;
+    // max-width: 1856px;
+    // margin-right: auto;
+    // margin-left: auto;
+
+}
+
+.img_slider_fold_additional{
+    overflow-y: clip;
+    .anim_container{
+        position: absolute;
+        right:-10px;
+        height: auto;
+        top:0px;
+        width: 100%;
+        max-width: 1100px;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1856px;
+    background: transparent;
+
+    // background-image: url(/static/images/home/additonal_block_bg.png);
+    // background-repeat: no-repeat;
+    // background-position: 100% 0%; 
+    // background-size: contain; /* Resize the background image to cover the entire container */
+    padding-top:134px;
+    padding-bottom: 180px;
+    position: relative;
+ h2{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding-bottom: 34px;
+    margin-bottom: 0px;
+    span{
+        display: block;
+        color: #20C58B;
+    }
+ }
+    ul{
+        list-style-type: none;
+    text-align: left;
+        img{
+            width: 18px;
+            margin-right: 0.9ch;
+            margin-top: 0.5ch;
+        }
+            div{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: flex-start;
+                padding-bottom: 10px;
+                p{
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+ p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;  
+    padding-bottom: 34px;
+    margin-bottom: 0px;  
+ }
+
+}
+
+.integrations_fold{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .list_container{
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        flex-direction: row;
+        width: 100%;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        align-items: flex-start;
+    }
+    h2{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    ul{
+        color: #0F0C31;
+        column-count: 2;
+        li{
+            list-style-type: none;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            
+            p{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-left: 15px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+//Mobile, ipad
+@media only screen and (max-width: 800px) {
+    .img_slider_fold{
+        padding-top: 0;
+        padding-bottom: 67px;
+        background-size: contain;
+        .matter_block{
+            padding: 52px 40px;
+            padding-bottom:14px ;
+        }
+        .heading{
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            padding-bottom: 0;
+        }
+        .description{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-bottom: 0;
+            max-width: 100% !important;
+        }
+        .slider_condtainer{
+            .sticker_image{
+                width: 40%;
+                max-width: 150px;
+                height: auto;
+                left: -35px;
+            }
+            iframe{
+                // width: 80%;
+                width: 333px;
+                height: 237px;
+            }
+        }
+    }
+    .img_slider_fold_additional{
+        background-position: 100% 100%;
+        padding-top: 67px;
+        padding-bottom: 270px;
+        .anim_container{
+            right: initial;
+            top:65%;
+        }
+        h2{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        margin-bottom: 0;
+        }
+        p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        }
+        button{
+            margin-right: auto;
+        }
+    }
+    .integrations_fold{
+        padding-top: 84px;
+        padding-bottom:84px;
+        padding-left: 24px;
+        padding-right: 24px;
+        h2{
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+        ul{
+            column-count: 1;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0px;
+            padding-left: 17px;
+            padding-right: 75px;
+        }
+    }
+}
+
+// For smaller laptops,netbooks
+@media only screen and (max-height:800px) and (min-width:900px){
+    .img_slider_fold{
+        .heading{
+            max-width: 100%;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+        .description{
+            max-width: 60%;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+        iframe{
+            height: 550px;
+        }
+    }
+    .img_slider_fold_additional{
+        padding-top: 94px;
+        padding-bottom: 126px;
+        .anim_container{
+            max-width: 1000px;
+        }
+        button{
+            font-size: 18px;
+            padding:18px 28px ;
+        }
+        h2{
+            font-size: 30px;
+            line-height: 44px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .integrations_fold{
+        h2{
+            font-size: 30px;
+            line-height: 44px;
+        }
+        p{
+
+        }
+    }
+}

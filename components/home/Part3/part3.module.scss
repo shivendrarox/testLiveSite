@@ -1,0 +1,455 @@
+.faq_fold{
+    padding-top: 128px;
+    padding-bottom: 80px;
+ .heading{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0.5px;
+
+    text-align: center;
+    padding-bottom: 60px;
+ }
+ .tab_head{
+    background: #FFFFFF;
+    border: 1px solid #E4E3EF;
+    box-sizing: border-box;
+    border-radius: 10px;
+ }
+ .tab_title{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;    
+ }
+ .tab_p{
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-right: 56px;
+ }
+ .faq_container{
+     max-width: 814px;
+     margin-left: auto;
+     margin-right: auto;
+}
+ .tab_body{
+//     padding: 13px;
+//     background: #FFFFFF;
+//     border: 1px solid #E4E3EF;
+//     box-sizing: border-box;
+//    // box-shadow: 0px 102.763px 82.2102px rgba(136, 98, 245, 0.07), 0px 42.9318px 34.3455px rgba(173, 118, 242, 0.0503198), 0px 22.9534px 18.3627px rgba(0, 0, 0, 0.0417275), 0px 12.8675px 10.294px rgba(0, 0, 0, 0.035), 0px 6.83383px 5.46706px rgba(0, 0, 0, 0.0282725), 0px 2.84371px 2.27497px rgba(0, 0, 0, 0.0196802);
+//     border-radius: 10px;
+ }       
+}
+
+.card_fold{
+    background: #F7F7FF;
+    width: 100%;
+    padding-top: 114px;
+    padding-bottom: 150px;
+    .heading{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0.5px;
+        text-align: center;
+
+        width: 867px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card_container{
+        padding-left: 220px;
+        padding-right: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 48px;
+    }
+    .card{
+        transition: all .4s cubic-bezier(0.4,0,0.2,1);
+        &:hover{
+            //filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            box-shadow: 0px 102.763px 82.2102px rgb(136 98 245 / 7%), 0px 42.9318px 34.3455px rgb(173 118 242 / 5%), 0px 22.9534px 18.3627px rgb(0 0 0 / 4%), 0px 12.8675px 10.294px rgb(0 0 0 / 4%), 0px 6.83383px 5.46706px rgb(0 0 0 / 3%), 0px 2.84371px 2.27497px rgb(0 0 0 / 2%);
+        }
+        max-width: 397px;
+        width: 100%;
+        padding: 42px;
+        background: #FFFFFF;
+        margin-right: 20px;
+        &:last-of-type{
+            margin-right:0px ;
+        }
+        h3{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 29px;
+            color: #0F0C31;
+
+            padding-top: 36px;
+        }
+        p{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0F0C31;
+            opacity: 0.67;
+
+            padding-top: 10px;
+        }
+        a{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #786AFF;
+
+            padding-top: 10px;
+        }
+    }
+    .bg_shadow{
+    }
+}
+
+.email_card_fold{
+    margin-bottom: 80px;
+    .email_card_container{
+        background: #5858e0;
+        background-image: url('https://res.cloudinary.com/mailmodo/image/upload/q_10/v1637143650/strapi/email_card_bg_a8befdf356.webp');
+        background-repeat: no-repeat;
+        background-position: 60% 0%; 
+        background-size: contain; /* Resize the background image to cover the entire container */
+        padding-top: 54px;
+        padding-left: 84px;
+        padding-right: 20px;
+        border-radius: 17px;
+        position: relative;
+        .img_container{
+            // border: 1px solid red;
+            position: absolute;
+            bottom: -8px;
+        }
+        p{
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 51px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        h2{
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 43px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        button{
+            background: linear-gradient(180deg, #20C58B 0%, #49E9B1 100%);
+            border-radius: 9px;
+            color: #FFFFFF;
+            border: none;
+            padding: 20px;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -0.531474px;
+            margin-top: 18px;
+            margin-bottom:54px;
+            
+        }
+    }
+}
+
+.awards_fold{ 
+    .badge_container{
+        padding-top: 30px;
+        margin-right: 10%;
+    }
+    .logo_g2{
+        margin-left: 20px;
+    }
+    .awards_container{
+        top: 30px;
+        position: relative;
+        z-index: 10;
+
+        background: #FFFFFF;
+        border: 1.02763px solid #E4E3EF;
+        box-sizing: border-box;
+        box-shadow: 0px 102.763px 82.2102px rgba(136, 98, 245, 0.07), 0px 42.9318px 34.3455px rgba(173, 118, 242, 0.0503198), 0px 22.9534px 18.3627px rgba(0, 0, 0, 0.0417275), 0px 12.8675px 10.294px rgba(0, 0, 0, 0.035), 0px 6.83383px 5.46706px rgba(0, 0, 0, 0.0282725), 0px 2.84371px 2.27497px rgba(0, 0, 0, 0.0196802);
+        padding: 26px 36px 26px 36px;
+    }
+    .awards_h2{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: #202020;
+
+        padding-bottom: 14px;
+        margin-bottom: 0;
+    }
+}
+
+//Mobile, ipad
+@media only screen and (max-width: 800px) {
+ 
+    .card_fold{
+        padding-bottom: 80px;
+        padding-left: 36px;
+        padding-right: 36px;
+        .heading{
+            width: 100%;
+            padding-bottom: 22px;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        .card_container{
+            padding:0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            margin-right: 0px;
+            margin-bottom: 16px;
+            padding: 36px;
+            max-width: 100%;
+            .hide_mobile{
+                display: none !important;
+            }
+            h3{
+                padding-top: 0px;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+
+            }
+            p{
+                font-family: Manrope;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+            }
+            a{
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+
+            }
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .faq_fold{
+        padding-top: 80px;
+        padding-bottom: 15px;
+        .faq_container{
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        .heading{
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            padding-bottom: 0px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        .tab_title{
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0px;
+text-align: left;
+        }
+        .tab_p{
+            font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: justify;
+padding-right: 0px;
+
+        }
+    }
+
+    .email_card_fold{
+        padding-bottom: 28px;
+        margin-bottom: 0px;
+        padding-top: 15px;
+        .email_card_container{
+           padding: 0;
+           padding-left: 10px;
+           padding-right: 10px;
+            .matter_block{
+                padding-top: 50px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            p{
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 51px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                margin: 0;
+            }
+            h2{
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 34px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                margin-bottom: 15%;
+            }
+            button{
+                margin-top: 12px;
+                padding: 20px 40px;
+                margin-bottom: 65%;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 22px;
+                letter-spacing: -0.5314737558364868px;
+                text-align: center;
+            }
+        }
+
+    }
+    .awards_fold{
+        .awards_container{
+            box-shadow: none;
+            top:0px;
+            border: 0px;
+            padding: 26px;
+        }
+        .logo_g2{
+            width: 70px;
+            display: block;
+          margin-right: auto;
+          margin-left:auto;
+          margin-top: 18px;
+        }
+        .logo_ph{
+            width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        
+        }
+        .awards_h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14.4882px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            padding-bottom:18px ;
+        }
+        .badge_container{
+            padding-top: 0px;
+            margin-right: 0%;
+            padding-bottom: 44px;
+        }
+    }
+}
+
+// For smaller laptops,netbooks
+@media only screen and (max-height:800px) and (min-width:900px){
+
+    .card_fold{
+        padding-top: 80px;
+        padding-bottom: 105px;
+        .heading{
+            width: 100%;
+            font-size: 30px;
+        }
+        .card_container{
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 24px;
+        }
+        .card{
+            max-width: 415px;
+            padding: 29px;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .email_card_fold{
+        .matter_block{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 20px;
+            }
+            button{
+                font-size: 18px;
+            }
+        }
+    }
+    .faq_fold{
+        padding-top:90px ;
+        padding-bottom:56px ;
+        .heading{
+            font-size: 30px;
+            padding-bottom: 42px;
+        }
+    }
+}

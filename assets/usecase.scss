@@ -1,0 +1,189 @@
+.use-case-section {
+  margin: 4rem 0;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  .detailed {
+    background-color: #fffef6;
+    padding: 1.5rem;
+    .heading {
+      color: #786aff;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      line-height: 2rem;
+    }
+    .tagline {
+      font-size: 16px;
+      margin-bottom: 2.5rem;
+      line-height: 16px;
+    }
+    .case-list {
+      li {
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 30px;
+        .sub-heading {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 16px;
+          line-height: 16px;
+          margin-bottom: 1rem;
+          font-weight: bold;
+        }
+        .text {
+          font-size: 16px;
+          font-weight: 500;
+          opacity: 0.7;
+        }
+        .icon {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 30px;
+        }
+      }
+    }
+  }
+  .usecase-card {
+    text-align: center;
+    position: relative;
+    .illustration {
+      position: absolute;
+      right: 25%;
+      bottom: calc(100% + 30px);
+      width: 50px;
+    }
+    h3 {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.test-mail-container {
+  margin-bottom: 0.8rem;
+}
+.test-mail-input {
+  display: block;
+  width: 22rem;
+  height: 3.3rem;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  margin: 0rem 0 0.2rem 0;
+  padding: 0.5rem 1rem;
+  opacity: 0.74;
+}
+.message {
+  color: red;
+  font-size: 0.9rem;
+  float: left;
+}
+.message-success {
+  color: rgb(2, 223, 112);
+  font-size: 0.9rem;
+  float: left;
+}
+.heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.para {
+  font-size: 1.5rem;
+}
+
+.mailmodo-designed-card-wrapper {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .illustration-1 {
+    position: absolute;
+    left: -52px;
+    top: -80px;
+    height: 450px;
+  }
+  .illustration-2 {
+    position: absolute;
+    right: -20px;
+    bottom: -98px;
+    width: 100px;
+  }
+  .heading {
+    margin-bottom: 5rem;
+  }
+  .mailmodo-designed-card {
+    background: #ffffff 0% 0%;
+    box-shadow: 10px 14px 56px rgba(0, 0, 0, 0.059);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-height: 300px;
+    .icon {
+      width: 90px;
+    }
+    .title {
+      margin-top: 30px;
+      font-size: 18px;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+    .text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.horizontal-section {
+  .heading {
+    margin-bottom: 1rem;
+  }
+  .para {
+    text-align: center;
+    color: #040418;
+    opacity: 0.84;
+  }
+  .mailmodo-client-card {
+    margin-top: 7rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    .icon {
+      width: 100px;
+      margin-bottom: 2rem;
+    }
+    .title {
+      font-size: 1.5rem;
+      color: #040418;
+      opacity: 0.84;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .use-case-section {
+    .detailed {
+      .heading {
+      }
+      .tagline {
+      }
+      .case-list {
+        li {
+          .sub-heading {
+          }
+          .text {
+          }
+          .icon {
+          }
+        }
+      }
+    }
+    .usecase-card {
+      margin: 50px 0 30px 0;
+      .illustration {
+        display: none;
+      }
+    }
+  }
+}

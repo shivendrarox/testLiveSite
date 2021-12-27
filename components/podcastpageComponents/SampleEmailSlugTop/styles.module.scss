@@ -1,0 +1,56 @@
+.cta_btn{
+    border: 0px solid;
+    padding: 12px 28px;
+    width: 40%;
+    //max-width: 25rem;
+    letter-spacing: 0em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 0px 5px 5px 0px;
+}
+.cta_input{
+    border:none;
+    width: 60%;
+    //padding: 10px;
+    max-width: 25rem;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 2.3rem;
+    text-align: center;
+    color: #18191F;
+    opacity: 1;
+    background-color: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 2px;
+}
+.cta_input:focus-visible {
+    outline-color: #786AFF;
+  }
+.cta{
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #786AFF;
+    border-radius: 5px;
+    width: 50%;
+
+    background: #786AFF;
+
+    //background-color: #786AFF;
+}
+@media only screen and (max-width: 800px) {
+    .cta_btn{
+        width: 45%;
+    }
+    .cta_input{
+        width: 45%;
+        margin-bottom: 0;
+    }
+}
